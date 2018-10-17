@@ -1,0 +1,363 @@
+{
+  "components": {
+
+    "LED1": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        -11.535056, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED10": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        -3.838085, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED11": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        19.252825, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED2": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        0.0104, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED3": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        15.40434, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED4": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        -15.383541, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED5": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        7.707369, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED6": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        11.555854, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED7": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        -7.68657, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED8": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        -19.232027, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }, 
+    "LED9": {
+      "footprint": "led-1206", 
+      "layer": "bottom", 
+      "location": [
+        3.858884, 
+        9.321493
+      ], 
+      "rotate": 90, 
+      "show": true, 
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }
+  }, 
+  "config": {
+    "name": "test1", 
+    "no-docs": false, 
+    "no-drill-index": false, 
+    "no-flashes": false, 
+    "no-layer-index": false, 
+    "rev": "first", 
+    "style-layout": "default", 
+    "units": "mm"
+  }, 
+  "distances": {
+    "from-pour-to": {
+      "drill": 0.25, 
+      "outline": 0.4, 
+      "pad": 0.25, 
+      "route": 0.25
+    }, 
+    "soldermask": {
+      "circle-buffer": 0.05, 
+      "path-scale": 1.05, 
+      "rect-buffer": 0.05
+    }, 
+    "solderpaste": {
+      "circle-buffer": -0.1, 
+      "path-scale": 0.9, 
+      "rect-buffer": -0.1
+    }
+  }, 
+  "documentation": {
+    "board-details": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.5mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.5mm", 
+      "location": [
+        -12.243017, 
+        -18.347399
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Board details:\nName: BINCO\nRevision: first\nDescription: a binary counter \nLicense: MIT\nDesigner: Saar Drimer, Boldport, saar@boldport.com"
+    }, 
+    "manufacturing": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.5mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.5mm", 
+      "location": [
+        -12.039821, 
+        -30.831399
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm\nMaterial: FR4 35/35 um copper\nSilkscreen: top, bottom, white\nSoldermask: top, bottom (green)\nSurface finish: lead free"
+    }, 
+    "pcbmode": {
+      "font-family": "Overlock-Regular-OTF-webfont", 
+      "font-size": "1.2mm", 
+      "letter-spacing": "0mm", 
+      "line-height": "1.2mm", 
+      "location": [
+        -15.849812, 
+        -41.294399
+      ], 
+      "rotate": 0, 
+      "style": "fill", 
+      "type": "text", 
+      "value": "Designed with PCBmodE, an open source software\n     http://pcbmode.com\nStay updated:\n     @boldport @pcbmode http://boldport.com"
+    }
+  }, 
+  "drill-index": {
+    "location": [
+      -27.971101, 
+      -47.126399
+    ]
+  }, 
+  "drills": {}, 
+  "files": {
+    "routing-data": "test1_routing.json", 
+    "routing-svg": "test1.svg"
+  }, 
+  "gerber": {
+    "decimals": 6, 
+    "digits": 6, 
+    "min-segment-length": 0.05, 
+    "steps-per-segment": 100
+  }, 
+  "layer-control": {
+    "assembly": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "conductor": {
+      "hide": false, 
+      "lock": false, 
+      "pads": {
+        "hide": false, 
+        "lock": false, 
+        "place": true
+      }, 
+      "place": true, 
+      "pours": {
+        "hide": false, 
+        "lock": true, 
+        "place": true
+      }, 
+      "routing": {
+        "hide": false, 
+        "lock": false, 
+        "place": true
+      }
+    }, 
+    "dimensions": {
+      "hide": false, 
+      "lock": true, 
+      "place": true
+    }, 
+    "documentation": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "drills": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "origin": {
+      "hide": false, 
+      "lock": true, 
+      "place": false
+    }, 
+    "outline": {
+      "hide": false, 
+      "lock": true, 
+      "place": true
+    }, 
+    "placement": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "silkscreen": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "soldermask": {
+      "hide": false, 
+      "lock": false, 
+      "place": true
+    }, 
+    "solderpaste": {
+      "hide": true, 
+      "lock": true, 
+      "place": false
+    }
+  }, 
+  "outline": {
+    "shape": {
+      "height": 22, 
+      "radii": {
+        "bl": 3, 
+        "br": 3, 
+        "tl": 3, 
+        "tr": 3
+      }, 
+      "type": "path", 
+      "value": "m 10.858333,11 c 2.140681,-0.340482 4.281363,-0.680964 6.422044,-1.0214454 1.69236,-1.0123173 3.384721,-2.0246345 5.077081,-3.0369518 1.2656,-2.1059322 2.531201,-4.2118644 3.796801,-6.31779663 0.663858,-2.34543537 1.327716,-4.69087077 1.991574,-7.03630647 -0.223524,-1.829043 -0.447047,-3.6580857 -0.670571,-5.4871287 -0.600087,-0.758457 -1.200175,-1.516914 -1.800262,-2.275371 -17.1166667,0 -34.2333333,0 -51.35,0 -0.600087,0.758457 -1.200175,1.516914 -1.800262,2.275371 -0.223524,1.829043 -0.447047,3.6580857 -0.670571,5.4871287 0.663858,2.3454357 1.327716,4.6908711 1.991574,7.03630647 1.2656,2.10593223 2.531201,4.21186443 3.796801,6.31779663 1.69236,1.0123173 3.384721,2.0246345 5.077081,3.0369518 2.140681,0.3404814 4.281363,0.6809634 6.422044,1.0214454 7.2388887,0 14.4777773,0 21.716666,0 z", 
+      "width": 51
+    }
+  }, 
+  "shapes": {
+  }, 
+  "soldermask": {
+    "circle-buffer": 0.05, 
+    "path-scale": 1.05, 
+    "rect-buffer": 0.05
+  }, 
+  "solderpaste": {
+    "circle-buffer": -0.1, 
+    "path-scale": 0.9, 
+    "rect-buffer": -0.1
+  }, 
+  "stackup": {
+    "name": "two-layer"
+  }, 
+  "vias": {
+    "default-via": "VIA"
+  }
+}

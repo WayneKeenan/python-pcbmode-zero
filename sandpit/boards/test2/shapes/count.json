@@ -1,0 +1,46 @@
+{
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont", 
+          "font-size": "1.5mm", 
+          "letter-spacing": "0mm", 
+          "line-height": "1.5mm", 
+          "location": [
+            -23.2, 
+            0
+          ], 
+          "rotate": 0, 
+          "style": "fill", 
+          "type": "text", 
+          "value": "UP"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont", 
+          "font-size": "1.5mm", 
+          "letter-spacing": "0mm", 
+          "line-height": "1.5mm", 
+          "location": [
+            24, 
+            0
+          ], 
+          "rotate": 0, 
+          "style": "fill", 
+          "type": "text", 
+          "value": "DOWN"
+        },
+        {
+          "type": "path",
+          "value": "m 20.824909,-8.060992 c 0.40422,0 0.80844,0 1.21266,0 m -0.60633,0.0012 c 0.20211,0.3558807 0.40422,0.7117613 0.60633,1.067642 -0.40422,0 -0.80844,0 -1.21266,0 0.20211,-0.3558807 0.40422,-0.7117613 0.60633,-1.067642 m -42.256148,1.067612 c -0.40422,0 -0.80844,0 -1.21266,0 m 0.60633,-0.0012 c -0.20211,-0.3558807 -0.40422,-0.7117613 -0.60633,-1.067642 0.40422,0 0.80844,0 1.21266,0 -0.20211,0.3558807 -0.40422,0.7117613 -0.60633,1.067642", 
+          "style": "stroke"
+        }
+      ]
+    }
+  }  
+}

@@ -1,0 +1,4 @@
+pcbmode
+jsontree
+svgwrite
+svgpathtools
