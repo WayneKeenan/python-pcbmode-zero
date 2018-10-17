@@ -11,6 +11,7 @@ Highlights:
 - copy, and slightly modifiy (e.g. location), existing components to new components
 - defaulted configuration options (e.g. documentation font defaults)
 - import SVG files as 'paths', rather than using embedded SVG path strings
+- saving the config automatically triggers `pcbmode` command utility to generate files
 
 
 
