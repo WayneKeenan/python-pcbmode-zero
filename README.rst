@@ -16,7 +16,7 @@ Highlights:
 Status
 ======
 
-Experimental... the current example_ hopefully gives a flavour of what could be.
+Experimental... the current example_ hopefully gives a flavour of what it currently is, and what could be.
 
 Documentation
 =============
