@@ -16,7 +16,7 @@ Highlights:
 Status
 ======
 
-Experimental... the current example hopefully gives a flavour of what could be.
+Experimental... the current example_ hopefully gives a flavour of what could be.
 
 Documentation
 =============
@@ -43,4 +43,5 @@ Thanks!
 
 
 .. _Issue: https://github.com/TheBubbleworks/python-pcbmode-zero/issues/
+.. _eample: https://github.com/TheBubbleworks/python-pcbmode-zero/exmaples/binco_simplified.py
 
