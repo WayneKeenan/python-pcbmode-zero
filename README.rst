@@ -9,6 +9,7 @@ Highlights:
 - procedural generation of PCB's in Python, e.g. use loops and generatate paths
 - consise 'dot' syntax for configuration
 - copy, and slightly modifiy (e.g. location), existing components to new components
+- defaulted configuration options (e.g. documentation font defaults)
 - import SVG files as 'paths', rather than using embedded SVG path strings
 
 
