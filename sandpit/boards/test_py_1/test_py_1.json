@@ -1,7 +1,7 @@
 {
     "files": {
-        "routing-svg": "test1.svg", 
-        "routing-data": "test1_routing.json"
+        "routing-svg": "test_py_1.svg", 
+        "routing-data": "test_py1_routing.json"
     }, 
     "distances": {
         "soldermask": {
@@ -109,7 +109,7 @@
             }, 
             "type": "path", 
             "value": "m 10.858333,11.0 c 2.140681,-0.340482 4.281363,-0.680964 6.422044,-1.0214454 c 1.69236,-1.0123173 3.384721,-2.0246345 5.077081,-3.0369518 c 1.2656,-2.1059322 2.531201,-4.2118644 3.796801,-6.31779663 c 0.663858,-2.34543537 1.327716,-4.69087077 1.991574,-7.03630647 c -0.223524,-1.829043 -0.447047,-3.6580857 -0.670571,-5.4871287 c -0.600087,-0.758457 -1.200175,-1.516914 -1.800262,-2.275371 c -17.1166667,0.0 -34.2333333,0.0 -51.35,0.0 c -0.600087,0.758457 -1.200175,1.516914 -1.800262,2.275371 c -0.223524,1.829043 -0.447047,3.6580857 -0.670571,5.4871287 c 0.663858,2.3454357 1.327716,4.6908711 1.991574,7.03630647 c 1.2656,2.10593223 2.531201,4.21186443 3.796801,6.31779663 c 1.69236,1.0123173 3.384721,2.0246345 5.077081,3.0369518 c 2.140681,0.3404814 4.281363,0.6809634 6.422044,1.0214454 c 7.2388887,0.0 14.4777773,0.0 21.716666,0.0 l 0.0,0.0 ", 
-            "height": 220
+            "height": 22
         }
     }, 
     "soldermask": {
@@ -136,7 +136,7 @@
             "font-size": "1.5mm", 
             "rotate": 0, 
             "style": "fill", 
-            "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm\nMaterial: FR4 35/35 um copper\nSilkscreen: top, bottom, white\nSoldermask: top, bottom (green)\nSurface finish: lead free!", 
+            "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm\nMaterial: FR4 35/35 um copper\nilkscreen: top, bottom, white\nSoldermask: top, bottom (green)\nSurface finish: lead free!", 
             "location": [
                 -12.243017, 
                 -18.347399

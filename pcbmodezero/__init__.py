@@ -19,25 +19,26 @@ class PCBmodEZero:
         self.board_json_filepath = "{}/boards/{}/{}.json".format(self.boards_root_dir, self.board_name, self.board_name)
         self.board_shape_dirpath = "{}/boards/{}/shapes" \
                                    "".format(self.boards_root_dir, self.board_name)
-        self.json = jsontree.mapped_jsontree_class(self.underscore2minus)
-        self.components= self.json()
-        self.config = self.json()
-        self.distances = self.json()
-        self.documentation = self.json()
-        self.layer_control = self.json()
-        self.gerber = self.json()
-        self.files = self.json()
-        self.drills = self.json()
-        self.drill_index = self.json()
-        self.outline = self.json()
-        self.shapes = self.json()
-        self.soldermask = self.json()
-        self.solderpaste = self.json()
-        self.stackup = self.json()
-        self.vias = self.json()
+        self.configItem = jsontree.mapped_jsontree_class(self.underscore2minus)
 
-        self.defaults = self.json()
-        self.defaults.documentaion = self.json()
+        self.components= self.configItem()
+        self.config = self.configItem()
+        self.distances = self.configItem()
+        self.documentation = self.configItem()
+        self.layer_control = self.configItem()
+        self.gerber = self.configItem()
+        self.files = self.configItem()
+        self.drills = self.configItem()
+        self.drill_index = self.configItem()
+        self.outline = self.configItem()
+        self.shapes = self.configItem()
+        self.soldermask = self.configItem()
+        self.solderpaste = self.configItem()
+        self.stackup = self.configItem()
+        self.vias = self.configItem()
+
+        self.defaults = self.configItem()
+        self.defaults.documentaion = self.configItem()
         self.defaults.documentation.font_family = "Overlock-Regular-OTF-webfont"
         self.defaults.documentation.font_size = "1.5mm"
         self.defaults.documentation.letter_spacing = "0mm"
@@ -66,7 +67,7 @@ class PCBmodEZero:
         return jsontree.clone(src)
 
     def save(self):
-        all = self.json()
+        all = self.configItem()
         all.components = self.clone(self.components)
         all.config = self.clone(self.config)
         all.distances = self.clone(self.distances)

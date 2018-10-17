@@ -10,7 +10,7 @@ Highlights:
 - consise 'dot' syntax for configuration
 - copy, and slightly modifiy (e.g. location), existing components to new components
 - defaulted configuration options (e.g. documentation font defaults)
-- import SVG files as 'paths', rather than using embedded SVG path strings
+- import SVG files for 'paths', rather than using embedded SVG path command strings
 - saving the config automatically triggers `pcbmode` command utility to generate files
 
 
