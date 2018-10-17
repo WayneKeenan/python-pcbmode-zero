@@ -43,5 +43,5 @@ Thanks!
 
 
 .. _Issue: https://github.com/TheBubbleworks/python-pcbmode-zero/issues/
-.. _example: https://github.com/TheBubbleworks/python-pcbmode-zero/exmaples/binco_simplified.py
+.. _example: https://github.com/TheBubbleworks/python-pcbmode-zero/examples/binco_simplified.py
 
