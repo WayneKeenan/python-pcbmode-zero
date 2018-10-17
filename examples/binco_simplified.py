@@ -1,6 +1,6 @@
 from pcbmodezero import PCBmodEZero
 
-p = PCBmodEZero(boards_parent_dir='sandpit', board_name='test_py_1')
+p = PCBmodEZero(boards_parent_dir='../sandpit', board_name='test_py_1')
 
 # Components
 
