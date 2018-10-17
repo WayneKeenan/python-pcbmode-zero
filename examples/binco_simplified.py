@@ -1,6 +1,6 @@
 from pcbmodezero import PCBmodEZero
 
-# PCBmodE simplified 'binco' board turned into Python
+# The PCBmodE  'binco' board turned into Python (simplified)
 
 p = PCBmodEZero(boards_parent_dir='../sandpit', board_name='test_py_1')
 
