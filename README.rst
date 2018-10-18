@@ -5,20 +5,29 @@ Experimental Python frontend to PCBmodE.
 
 Highlights:
 
-- programtic configuration (e.g. reuse config generated from functions, use constants, )
-- procedural generation of PCB's in Python, e.g. use loops and generatate paths
-- consise 'dot' syntax for configuration
-- copy, and slightly modifiy (e.g. location), existing components to new components
-- defaulted configuration options (e.g. documentation font defaults)
-- import SVG files for 'paths', rather than using embedded SVG path command strings
-- saving the config automatically triggers `pcbmode` command utility to generate files
+- concise: 'flat dot' syntax for configuration (preserving original JSON names)
+- default values: defaulted configuration options (e.g. documentation font defaults)
+- reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
+- programatic configuration: e.g. reuse config generated from functions, use constants etc
+- procedural generation: e.g. use loops to generate paths and component placements
+- less clutter: e.g. import SVG files for 'paths', rather than using embedded SVG path command strings
+- automated:  triggers `pcbmode` command utility to generate output files
 
 
 
 Status
 ======
 
-Experimental... the current example_ hopefully gives a flavour of what it currently is, and what could be.
+Experimental... the current example_ should hopefully give a flavour of what it currently is, and what could be.
+
+Currently only generation of the main [board].json file is supported.
+
+On the TODO list is the support of generating:
+
+- [board]_routing.json file
+- shapes/[shape].json files
+- components/[component].json files
+
 
 Documentation
 =============
