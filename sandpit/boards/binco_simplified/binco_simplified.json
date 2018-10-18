@@ -1,7 +1,7 @@
 {
     "files": {
-        "routing-svg": "test_py_1.svg", 
-        "routing-data": "test_py1_routing.json"
+        "routing-svg": "binco_simplified.svg", 
+        "routing-data": "binco_simplified_routing.json"
     }, 
     "distances": {
         "soldermask": {

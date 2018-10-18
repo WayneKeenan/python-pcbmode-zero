@@ -2,7 +2,10 @@ from pcbmodezero import PCBmodEZero
 
 # The PCBmodE 'binco' board turned into Python config (massively simplified from original)
 
-pcb = PCBmodEZero(boards_parent_dir='../sandpit', board_name='test_py_1')
+BOARD_NAME="binco_simplified"
+
+
+pcb = PCBmodEZero(boards_parent_dir='../sandpit', board_name=BOARD_NAME)
 
 # Boards Components
 
@@ -87,9 +90,8 @@ pcb.drill_index.location = [-27.971101, -47.126399]
 
 pcb.drills = {}
 
-
-pcb.files.routing_data = "test_py1_routing.json"
-pcb.files.routing_svg = "test_py_1.svg"
+pcb.files.routing_data = BOARD_NAME + "_routing.json"
+pcb.files.routing_svg = BOARD_NAME + ".svg"
 
 
 pcb.gerber.decimals = 6
