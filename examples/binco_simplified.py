@@ -5,7 +5,7 @@ from pcbmodezero import PCBmodEZero
 BOARD_NAME="binco_simplified"
 
 
-pcb = PCBmodEZero(boards_parent_dir='../sandpit', board_name=BOARD_NAME)
+pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Boards Components
 

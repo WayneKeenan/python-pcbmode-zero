@@ -13,8 +13,8 @@ from pcbmode.utils.svg import absolute_to_relative_path
 
 class PCBmodEZero:
 
-    def __init__(self, boards_parent_dir, board_name):
-        self.boards_root_dir = boards_parent_dir
+    def __init__(self, boards_dir, board_name):
+        self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
         self.board_json_filepath = "{}/boards/{}/{}.json".format(self.boards_root_dir, self.board_name, self.board_name)
         self.board_shape_dirpath = "{}/boards/{}/shapes" \
