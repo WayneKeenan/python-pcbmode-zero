@@ -246,70 +246,33 @@ pcb.vias.default_via = "VIA"
 # Routing
 
 
-from pcbmode.utils import utils
 from pcbmode.utils.svg import absolute_to_relative_path
 from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc
 
-
-routing = pcb.configItem()
-
-
-seg1 = CubicBezier(3, 1, 2, 2)
+seg1 = CubicBezier(3, 1, 2, 4)
 seg2 = Line(2, 2.5)
 path = Path(seg1, seg2)
 
-
-p1 = {
+route1 = {
     "stroke-width": 0.4,
     "style": "stroke",
     "type": "path",
     "value": absolute_to_relative_path(path.d())
 }
 
-d1 = utils.digest("%s%s" % (p1['value'], p1['style']))
 
+v = CubicBezier(4.6147194+11.014797j, 4.6618894+11.474522j, 4.6113294+11.597255j, 4.6387524+12.071022j)
 
-routing.routes.bottom = {}
-routing.routes.bottom[d1]=p1
-
-
-routing.routes.top = {
-    "03b8831fb": {
-        "stroke-width": 0.3,
-        "style": "stroke",
-        "type": "path",
-        "value": "m 4.6147194,11.014797 c 0.04717,0.459725 -0.00339,0.582458 0.024033,1.056225"
-    },
+route2 = {
+    "stroke-width": 0.3,
+    "style": "stroke",
+    "type": "path",
+    "value": absolute_to_relative_path(Path(v).d())
 }
 
 
-via1 = {
-    "assembly": {
-        "refdef": {
-            "show": False
-        }
-    },
-    "footprint": "via",
-    "layer": "top",
-    "location": [
-        25.798446,
-        -0.15201
-    ],
-    "rotate": 0,
-    "silkscreen": {
-        "refdef": {
-            "show": False
-        }
-    }
-}
+pcb.addRoute(route1)
+pcb.addRoute(route2)
+pcb.addVia(pcb.createVia([15.798446, -0.15201]))
 
-print("*" * 80)
-
-routing.vias = {
-    utils.digest("%s%s" % (via1['location'][0], via1['location'][0])): via1
-}
-
-print(routing)
-
-pcb.saveRouting(routing)
 pcb.save()

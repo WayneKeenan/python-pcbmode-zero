@@ -9,6 +9,7 @@ import jsontree
 from svgpathtools import svg2paths
 
 from pcbmode import pcbmode
+from pcbmode.utils import utils
 from pcbmode.utils.svg import absolute_to_relative_path
 
 
@@ -39,6 +40,11 @@ class PCBmodEZero:
         self.solderpaste = self.configItem()
         self.stackup = self.configItem()
         self.vias = self.configItem()
+
+        self.routing = self.configItem()
+        self.routing.routes.bottom = {}
+        self.routing.routes.top = {}
+        self.routing.vias = {}
 
         self.defaults = self.configItem()
         self.defaults.documentaion = self.configItem()
@@ -126,6 +132,7 @@ class PCBmodEZero:
 
         self.writeJSON(all, self.board_json_filepath)
 
+        self.saveRouting()
         chdir(self.boards_root_dir)
         try:
             oldargv = sys.argv
@@ -154,5 +161,25 @@ class PCBmodEZero:
         return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
 
 
-    def saveRouting(self, routing):
-        return self.writeJSON(routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
+    def saveRouting(self):
+        return self.writeJSON(self.routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
+
+    def createVia(self, location, layer='top', footprint='via'):
+        via = self.configItem()
+        via.footprint = footprint
+        via.layer = layer
+        via.location = location
+        via.rotate = 0
+        via.show = True
+        via.assembly.refdef.show = False
+        via.silkscreen.refdef.show = False
+        return via
+
+    def addRoute(self, route):
+        key = utils.digest("%s%s" % (route['value'], route['style']))
+
+        self.routing.routes.bottom[key] = route
+
+    def addVia(self, via):
+        key = utils.digest("%s%s" % (via.location[0], via.location[1]))
+        self.routing.vias[key] = via
