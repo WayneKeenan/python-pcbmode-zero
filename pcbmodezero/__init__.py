@@ -17,8 +17,8 @@ class PCBmodEZero:
         self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
         self.board_json_filepath = "{}/boards/{}/{}.json".format(self.boards_root_dir, self.board_name, self.board_name)
-        self.board_shape_dirpath = "{}/boards/{}/shapes" \
-                                   "".format(self.boards_root_dir, self.board_name)
+        self.board_shape_dirpath = "{}/boards/{}/shapes".format(self.boards_root_dir, self.board_name)
+        self.board_components_dirpath = "{}/boards/{}/components".format(self.boards_root_dir, self.board_name)
         self.configItem = jsontree.mapped_jsontree_class(self.underscore2minus)
 
         self.components= self.configItem()
@@ -63,6 +63,14 @@ class PCBmodEZero:
             raise ValueError
         return name.replace('_', '-')
 
+    def writeJSON(self, json_obj, filepath):
+        json_txt = jsontree.dumps(json_obj, indent=4)
+        #print (all_json)
+
+        with open(filepath, 'w') as file:
+            file.write(json_txt)
+
+
     def clone(self, src):
         return jsontree.clone(src)
 
@@ -84,11 +92,7 @@ class PCBmodEZero:
         all.stackup = self.clone(self.stackup)
         all.vias = self.clone(self.vias)
 
-        all_json = jsontree.dumps(all, indent=4)
-        #print (all_json)
-
-        with open(self.board_json_filepath, 'w') as file:
-            file.write(all_json)
+        self.writeJSON(all, self.board_json_filepath)
 
         chdir(self.boards_root_dir)
         try:
@@ -108,6 +112,11 @@ class PCBmodEZero:
             return absolute_to_relative_path(path.d())
 
     def parseShapeSVG(self, svg_filename):
-
         return self.readSVG(join(self.board_shape_dirpath, svg_filename))
 
+
+    def parseComponentSVG(self, svg_filename):
+        return self.readSVG(join(self.board_components_dirpath, svg_filename))
+
+    def saveComponent(self, component, component_name):
+        return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
