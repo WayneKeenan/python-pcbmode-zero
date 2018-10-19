@@ -2,6 +2,8 @@ from pprint import pformat
 from os import chdir
 from os.path import join
 import sys
+import io
+
 
 import jsontree
 from svgpathtools import svg2paths
@@ -16,6 +18,7 @@ class PCBmodEZero:
     def __init__(self, boards_dir, board_name):
         self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
+        self.board_root_filepath = "{}/boards/{}".format(self.boards_root_dir, self.board_name)
         self.board_json_filepath = "{}/boards/{}/{}.json".format(self.boards_root_dir, self.board_name, self.board_name)
         self.board_shape_dirpath = "{}/boards/{}/shapes".format(self.boards_root_dir, self.board_name)
         self.board_components_dirpath = "{}/boards/{}/components".format(self.boards_root_dir, self.board_name)
@@ -48,6 +51,35 @@ class PCBmodEZero:
         self.defaults.documentation.style = "fill"
         self.defaults.documentation.type = "text"
         self.defaults.documentation.value = "Warning: No Text Set"
+        self.preinit_pcbmode()
+
+    def preinit_pcbmode(self):
+        pcbmode.config.cfg['digest-digits'] = 10
+
+    # def preinit_pcbmode(self):
+    #     # ABORTIVE: Hacks to avoid modifying the internal PCBmodE source, for now.
+    #
+    #     # Get PCBmodE to initialise it's config
+    #     # so we can re-use some of the internal helpers (e.g. 'digest' digits)
+    #
+    #     try:
+    #         oldargv = sys.argv
+    #         oldexit = sys.exit
+    #         oldstdout = sys.stdout
+    #         oldstderr = sys.stderr
+    #         sys.stdout = io.BytesIO()
+    #         sys.stderr = io.BytesIO()
+    #         sys.argv = sys.argv[0::]
+    #         sys.exit = lambda x: x
+    #         sys.argv.extend(['-h'])
+    #         pcbmode.main()
+    #     except Exception:
+    #         pass
+    #     finally:
+    #         sys.argv = oldargv
+    #         sys.exit = oldexit
+    #         sys.stdout = oldstdout
+    #         sys.stderr = oldstderr
 
     def json2py(self, filepath):
         with open(filepath, 'r') as file:
@@ -120,3 +152,7 @@ class PCBmodEZero:
 
     def saveComponent(self, component, component_name):
         return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
+
+
+    def saveRouting(self, routing):
+        return self.writeJSON(routing, join(self.board_root_filepath, self.board_name + '_routing.json'))

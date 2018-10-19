@@ -242,4 +242,74 @@ pcb.stackup.name = "two-layer"
 pcb.vias.default_via = "VIA"
 
 
+
+# Routing
+
+
+from pcbmode.utils import utils
+from pcbmode.utils.svg import absolute_to_relative_path
+from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc
+
+
+routing = pcb.configItem()
+
+
+seg1 = CubicBezier(3, 1, 2, 2)
+seg2 = Line(2, 2.5)
+path = Path(seg1, seg2)
+
+
+p1 = {
+    "stroke-width": 0.4,
+    "style": "stroke",
+    "type": "path",
+    "value": absolute_to_relative_path(path.d())
+}
+
+d1 = utils.digest("%s%s" % (p1['value'], p1['style']))
+
+
+routing.routes.bottom = {}
+routing.routes.bottom[d1]=p1
+
+
+routing.routes.top = {
+    "03b8831fb": {
+        "stroke-width": 0.3,
+        "style": "stroke",
+        "type": "path",
+        "value": "m 4.6147194,11.014797 c 0.04717,0.459725 -0.00339,0.582458 0.024033,1.056225"
+    },
+}
+
+
+via1 = {
+    "assembly": {
+        "refdef": {
+            "show": False
+        }
+    },
+    "footprint": "via",
+    "layer": "top",
+    "location": [
+        25.798446,
+        -0.15201
+    ],
+    "rotate": 0,
+    "silkscreen": {
+        "refdef": {
+            "show": False
+        }
+    }
+}
+
+print("*" * 80)
+
+routing.vias = {
+    utils.digest("%s%s" % (via1['location'][0], via1['location'][0])): via1
+}
+
+print(routing)
+
+pcb.saveRouting(routing)
 pcb.save()
