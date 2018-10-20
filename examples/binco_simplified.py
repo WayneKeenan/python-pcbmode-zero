@@ -244,8 +244,8 @@ pcb.vias.default_via = "VIA"
 
 # Routing
 
-pcb.addRoute(Path(Line(3+0j, 3-1j), Line(3+0j, 3.5+0j)))
-pcb.addRoute(Path(CubicBezier(1+1j, 2+2j, 4+2j, 5+1j)), layer='top')
+pcb.addRoute([Line(3+0j, 3-1j), Line(3+0j, 3.5+0j)])
+pcb.addRoute([CubicBezier(1+1j, 2+2j, 4+2j, 5+1j)], layer='top')
 pcb.addVia([1.5, 2])
 pcb.addVia([4.5, 2])
 

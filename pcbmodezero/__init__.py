@@ -183,7 +183,10 @@ class PCBmodEZero:
 
         self.routing.routes[layer][key] = route
 
-    def addRoute(self, path, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+    def addRoute(self, paths, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+
+        path = Path(*paths)
+
         self._addRouteToLayer({
             "stroke-width": stroke_width,
             "style": style,
