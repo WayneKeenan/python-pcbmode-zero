@@ -1,10 +1,10 @@
-from pcbmodezero import PCBmodEZero, Path, Line, CubicBezier
+from pcbmodezero import PCB, Path, Line, CubicBezier
 from pcbmodezero.components.leds import led_1206
 from pcbmodezero.components.vias import default_via
 
 BOARD_NAME="binco_simplified"
 
-pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
+pcb = PCB(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Component Library
 

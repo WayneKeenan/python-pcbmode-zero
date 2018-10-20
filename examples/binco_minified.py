@@ -1,6 +1,6 @@
-from pcbmodezero import PCBmodEZero, Line, CubicBezier
+from pcbmodezero import PCB, Line, CubicBezier
 
-pcb = PCBmodEZero(board_name = "binco_minified", boards_dir='../sandpit/boards')
+pcb = PCB(board_name ="binco_minified", boards_dir='../sandpit/boards')
 
 # Import from built-in Component Library
 

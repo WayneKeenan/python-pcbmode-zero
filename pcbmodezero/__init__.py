@@ -12,9 +12,7 @@ from pcbmode import pcbmode
 from pcbmode.utils import utils
 from pcbmode.utils.svg import absolute_to_relative_path
 
-
-
-class PCBmodEZero:
+class PCB:
 
     def __init__(self, boards_dir, board_name, rev="first"):
         self.boards_root_dir = join(boards_dir, '..')
@@ -257,7 +255,7 @@ class PCBmodEZero:
 
     @classmethod
     def create_component(cls, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
-        c = PCBmodEZero.create_config_item()
+        c = PCB.create_config_item()
         c.footprint = footprint
         c.layer = layer
         c.location = location
@@ -315,5 +313,37 @@ class PCBmodEZero:
         self.outline.shape.radii = radii
         self.outline.shape.type = type
         self.outline.shape.value=self.parse_shape_svg(shape_name)
+
+    def add_outline_path(self, paths, width, height, radii=dict(bl=3, br=3, tl=3, tr=3), type="path"):
+
+        path = Path(*paths)
+
+        self.outline.shape.height = height
+        self.outline.shape.width = width
+        self.outline.shape.radii = radii
+        self.outline.shape.type = type
+        self.outline.shape.value= absolute_to_relative_path(path.d())
+
+    def board_component_pin_location(self, component_name, pin_name):
+        board_component = self.components[component_name]
+        board_component_footprint = board_component.footprint
+        board_component_location = board_component.location
+
+        library_component = self.component_library[board_component_footprint]
+        library_component_pin_location = library_component.pins[pin_name].layout.location
+
+        # TODO: Handle board_component.rotate
+        location = [library_component_pin_location[0] + board_component_location[0],
+                    library_component_pin_location[1] - board_component_location[1]]
+
+        return location
+
+    def connect_pins(self, c1, p1, c2, p2, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+
+        start_pin = self.board_component_pin_location(c1, p1)
+        end_pin = self.board_component_pin_location(c2, p2)
+
+        self.add_route([Line(complex(start_pin[0], start_pin[1]), complex(end_pin[0], end_pin[1]))])
+
 
 from pcbmodezero.components import find_library_component

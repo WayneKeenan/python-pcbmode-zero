@@ -107,8 +107,6 @@ venv.bak/
 
 sandpit/svg/out
 
-sandpit/boards/binco_simplified/*.json
-sandpit/boards/binco_simplified/components/*.json
+sandpit/boards/**/*.json
+sandpit/boards/**/components/*.json
 
-sandpit/boards/binco_minified/*.json
-sandpit/boards/binco_minified/components/*.json
