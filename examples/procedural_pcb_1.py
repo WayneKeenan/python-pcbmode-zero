@@ -1,4 +1,4 @@
-import math
+from math import sin, radians
 
 from pcbmodezero import PCB
 
@@ -19,7 +19,7 @@ x_pos = -BOARD_WIDTH/2 + 10
 x_step = BOARD_WIDTH/10
 
 while x_pos < BOARD_WIDTH/2 - 10 :
-    y_pos = math.sin(math.radians(x_pos*5)) * BOARD_HEIGHT/2.2
+    y_pos = sin(radians(x_pos*5)) * BOARD_HEIGHT/2.2
     pcb.add_component('led-1206', 'LED_' + str(led_id), [x_pos, y_pos])
     x_pos += x_step
     led_id +=1
