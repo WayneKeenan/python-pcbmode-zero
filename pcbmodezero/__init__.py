@@ -12,8 +12,6 @@ from pcbmode import pcbmode
 from pcbmode.utils import utils
 from pcbmode.utils.svg import absolute_to_relative_path
 
-
-
 class PCBmodEZero:
 
     def __init__(self, boards_dir, board_name):
@@ -47,7 +45,12 @@ class PCBmodEZero:
         self.routing.routes.top = {}
         self.routing.vias = {}
 
-        # Board config baseline defaults
+        # Board config baseline defaults (TODO: read from PCBmodE config?)
+
+        self.gerber.decimals = 6
+        self.gerber.digits = 6
+        self.gerber.min_segment_length = 0.05
+        self.gerber.steps_per_segment = 100
 
         self.distances.from_pour_to.drill = 0.25
         self.distances.from_pour_to.outline = 0.4

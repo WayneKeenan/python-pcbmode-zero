@@ -1,4 +1,6 @@
-from pcbmodezero import PCBmodEZero, Path, Line, CubicBezier
+from pcbmodezero import PCBmodEZero, Line, CubicBezier
+
+from pcbmodezero.components import findLibraryComponent
 from pcbmodezero.components.leds import led_1206
 from pcbmodezero.components.vias import default_via
 
@@ -10,6 +12,8 @@ pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 pcb.addLibraryComponent(default_via, 'via')
 pcb.addLibraryComponent(led_1206, 'led-1206')
+
+pcb.addLibraryComponent(findLibraryComponent('555-SOIC8'), 'timer')
 
 # Board Component instances
 
@@ -25,8 +29,18 @@ led1.silkscreen.refdef.show = True
 led10 = pcb.clone(led1)
 led10.location = [-3.838085, 9.321493]
 
+
+timer = pcb.configItem()
+timer.footprint = 'timer'
+timer.layer = "bottom"
+timer.location = [5, 9]
+timer.rotate = 180
+timer.show = True
+timer.silkscreen.refdef.show = True
+
 pcb.components.LED1 = led1
 pcb.components.LED10 = led10
+pcb.components.timer = timer
 
 # PCBmodE Board Config
 
@@ -54,11 +68,6 @@ pcb.documentation.pcbmode.location = [-15.849812, -41.294399]
 pcb.documentation.pcbmode.value = "Designed with PCBmodE"
 
 pcb.drill_index.location = [-27.971101, -47.126399]
-
-pcb.gerber.decimals = 6
-pcb.gerber.digits = 6
-pcb.gerber.min_segment_length = 0.05
-pcb.gerber.steps_per_segment = 100
 
 pcb.layer_control.assembly = dict(hide=False, lock=False, place=True)
 pcb.layer_control.conductor.hide = False
