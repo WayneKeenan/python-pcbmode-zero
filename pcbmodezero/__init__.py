@@ -23,7 +23,8 @@ class PCBmodEZero:
         self.board_json_filepath = "{}/boards/{}/{}.json".format(self.boards_root_dir, self.board_name, self.board_name)
         self.board_shape_dirpath = "{}/boards/{}/shapes".format(self.boards_root_dir, self.board_name)
         self.board_components_dirpath = "{}/boards/{}/components".format(self.boards_root_dir, self.board_name)
-        self.configItem = jsontree.mapped_jsontree_class(self.underscore2minus)
+        self.component_library = {}
+
 
         self.components= self.configItem()
         self.config = self.configItem()
@@ -58,6 +59,11 @@ class PCBmodEZero:
         self.defaults.documentation.type = "text"
         self.defaults.documentation.value = "Warning: No Text Set"
         self.preinit_pcbmode()
+
+    @classmethod
+    def configItem(cls):
+        return jsontree.mapped_jsontree_class(cls.underscore2minus)()
+
 
     def preinit_pcbmode(self):
         pcbmode.config.cfg['digest-digits'] = 10
@@ -96,7 +102,8 @@ class PCBmodEZero:
             #print(jsontree.dumps(decoded, indent=4))
             return decoded
 
-    def underscore2minus(self, name):
+    @classmethod
+    def underscore2minus(cls, name):
         if name == '__class__':
             raise ValueError
         return name.replace('_', '-')
@@ -111,7 +118,8 @@ class PCBmodEZero:
     def dumpJSON(self, json_obj):
         print(jsontree.dumps(json_obj, indent=4))
 
-    def clone(self, src):
+    @classmethod
+    def clone(cls, src):
         return jsontree.clone(src)
 
     def save(self):
@@ -134,6 +142,7 @@ class PCBmodEZero:
 
         self.writeJSON(all, self.board_json_filepath)
 
+        self.saveComponents()
         self.saveRouting()
         chdir(self.boards_root_dir)
         try:
@@ -146,11 +155,13 @@ class PCBmodEZero:
             sys.argv = oldargv
 
 
-    def readSVG(self, filepath):
+    @classmethod
+    def readSVG(cls, filepath):
         paths, attributes = svg2paths(filepath)
 
         for path in paths:
             return absolute_to_relative_path(path.d())
+
 
     def parseShapeSVG(self, svg_filename):
         return self.readSVG(join(self.board_shape_dirpath, svg_filename))
@@ -159,8 +170,17 @@ class PCBmodEZero:
     def parseComponentSVG(self, svg_filename):
         return self.readSVG(join(self.board_components_dirpath, svg_filename))
 
+    def addComponent(self, component, component_name):
+        if component_name in self.component_library:
+            raise ValueError("%s already exists.".format(component_name))
+        self.component_library[component_name] = component
+
     def saveComponent(self, component, component_name):
         return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
+
+    def saveComponents(self):
+        for name, component in self.component_library.items():
+            self.saveComponent(component, name)
 
 
     def saveRouting(self):

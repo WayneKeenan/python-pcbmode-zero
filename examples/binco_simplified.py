@@ -1,115 +1,21 @@
 from pcbmodezero import PCBmodEZero, Path, Line, CubicBezier
-
-# The PCBmodE 'binco' board turned into Python config (massively simplified from original)
+from pcbmodezero.components.leds import led_1206
+from pcbmodezero.components.vias import default_via
 
 BOARD_NAME="binco_simplified"
 
-
 pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
-
 
 # Components
 
-# VIA
-
-via = pcb.configItem()
-
-via.pins['VIA'].layout.pad = 'via'
-via.pins['VIA'].layout.location = [0, 0]
-via.pads.via.shapes = [
-    {
-        "type": "circle",
-        "layers": ["top", "internal", "bottom"],
-        "style": "fill",
-        "diameter": 0.95,
-        "soldermask": {},
-        "solderpaste": {}
-    }
-]
-via.pads.drill.drills = [
-    {
-        "diameter": 0.5
-    }
-]
-
-pcb.saveComponent(via, 'via')
-
-
-# LED
-
-
-led_1206 = pcb.configItem()
-
-led_1206.pins['1'].layout.pad = 'smd'
-led_1206.pins['1'].layout.location = [-1.8, 0]
-led_1206.pins['1'].layout.rotate = 180
-
-led_1206.pins['2'].layout.pad = 'smd'
-led_1206.pins['2'].layout.location = [1.8, 0]
-led_1206.pins['2'].layout.rotate = 0
-
-led_1206.pins['DRILL'].layout.pad = 'drill'
-led_1206.pins['DRILL'].layout.location = [0, 0]
-
-led_1206.layout.silkscreen.shapes = []
-
-led_1206.layout.assembly.shapes = [
-    {
-        "type": "rect",
-        "style": "stroke",
-        "stroke-width": 0.1,
-        "width": 3.2,
-        "height": 1.6
-    },
-    {
-        "type": "circle",
-        "style": "fill",
-        "diameter": 1.6
-    }
-]
-
-led_1206.pads.smd.shapes = [
-    {
-        "type": "path",
-        "value": pcb.parseComponentSVG('led-1206.svg'),
-        "rotate": 90,
-        "width": 1.5,
-        "height": 1.6,
-        "radii": {
-            "bl": 0,
-            "br": 0.3,
-            "tl": 0,
-            "tr": 0.3
-        }
-    }
-]
-
-led_1206.pads.drill.shapes = [
-    {
-        "type": "circle",
-        "layers": ["top", "bottom"],
-        "style": "fill",
-        "diameter": 0.5,
-        "buffer-to-pour": 0.8,
-        "solderpaste": {}
-    }
-]
-
-led_1206.pads.drill.drills = [
-    {
-        "diameter": 1.8
-    }
-]
-
-#print(led_1206)
-
-pcb.saveComponent(led_1206, 'led-1206')
+pcb.addComponent(default_via, 'via')
+pcb.addComponent(led_1206, 'led-1206')
 
 # Instatiated Boards Components
 
 led1 = pcb.configItem()
 led1.footprint='led-1206'
-led1.layer="bottom"
+led1.layer = "bottom"
 led1.location = [-11.535056, 9.321493]
 led1.rotate = 90
 led1.show = True
