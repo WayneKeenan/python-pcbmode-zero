@@ -1,0 +1,145 @@
+{
+"pins":
+  {
+  "M1":
+    {	
+      "layout": 
+      {
+        "pad": "mount-pad", 
+        "location": [-8.15, -1.4]
+      }
+    },
+  "M2":
+    {	
+      "layout": 
+      {
+        "pad": "mount-pad", 
+        "location": [8.15, -1.4]
+      }
+    },
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-4.5, 0.95]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-3.5, 0.95]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-2.5, 0.95]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-1.5, 0.95]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-0.5, 0.95]
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [0.5, 0.95]
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [1.5, 0.95]
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [2.5, 0.95]
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [3.5, 0.95]
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [4.5, 0.95]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin-pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top", "bottom"],
+          "height": 1.9,
+          "width": 0.6,
+          "location": [0, 0] 
+        }
+      ]
+    },
+    "mount-pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top", "bottom"],
+          "height": 2.8,
+          "width": 2.1,
+          "location": [0, 0] 
+        }
+      ]
+    }
+  }
+}

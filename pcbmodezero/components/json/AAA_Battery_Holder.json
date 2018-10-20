@@ -1,0 +1,50 @@
+{
+  "pins":
+  {
+    "01":{"layout":{"pad": "pin","location": [11.9,23.11],"label": ""}},
+    "02":{"layout":{"pad": "pin","location": [0,23.11],"label": ""}}
+
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	         "height":51.5,
+           "width":37,
+           "location":[0,0]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+	{
+	  "layers": ["top","bottom"],
+	  "type": "circle",
+	  "diameter": 2.3
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.3
+        }
+      ]
+    }
+
+}
+}

@@ -1,0 +1,173 @@
+{
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-19.05, 0]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-16.51, 0]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-13.97, 0]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-11.43, 0]
+      }
+    },
+  "5":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-8.89, 0]
+      }
+    },
+  "6":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-6.35, 0]
+      }
+    },
+  "7":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-3.81, 0]
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-1.27, 0]
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [1.27, 0]
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [3.81, 0]
+      }
+    },
+  "11":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [6.35, 0]
+      }
+    },
+  "12":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [8.89, 0]
+      }
+    },
+  "13":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [11.43, 0]
+      }
+    },
+  "14":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [13.94, 0]
+      }
+    },
+  "15":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [16.51, 0]
+      }
+    },
+  "16":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [19.05, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 40.64,
+          "height": 2.3
+        }
+      ]        
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "diameter": 1.7 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    }
+  }
+}

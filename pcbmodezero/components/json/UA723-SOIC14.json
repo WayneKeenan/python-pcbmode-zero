@@ -1,0 +1,181 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, 3.81],
+        "label": "NC"
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, 2.54],
+        "label": "C-LIM"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, 1.27],
+        "label": "C-SEN"
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, 0],
+        "label": "IN-"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, -1.27],
+        "label": "IN+"
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, -2.54],
+        "label": "REF"
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-2.7, -3.81],
+        "label": "VCC-"
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, -3.81],
+        "label": "NC"
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, -2.54],
+        "label": "VZ"
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, -1.27],
+        "label": "OUT"
+      }
+    },
+  "11":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, 0],
+        "label": "VC"
+      }
+    },
+  "12":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, 1.27],
+        "label": "VCC+"
+      }
+    },
+  "13":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, 2.54],
+        "label": "FREQ"
+      }
+    },
+  "14":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [2.7, 3.81],
+        "label": "NC"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "diameter": 0.8,
+          "layers": ["top"],
+          "style": "fill",
+          "location": [-3.1,5.0]          
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "height": 10,
+          "width": 4
+        },
+        { 
+          "type": "circle",
+          "layers": ["top"],
+          "style": "fill",
+          "diameter": 0.8,
+          "location": [-3.0,4.5]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 2.0,
+          "height": 0.6,
+          "layers": ["top"]
+        }
+      ]      
+    }
+  }
+}

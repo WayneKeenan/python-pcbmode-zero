@@ -14,7 +14,7 @@ pcb.addLibraryComponent('555-SOIC8')
 
 pcb.components.LED1 = pcb.createComponent('led-1206', [-11.5, 9.5], rotate=90)
 pcb.components.LED10 = pcb.createComponent('led-1206', [-5, 9.5], rotate=90)
-pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  7])
+pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  9])
 
 # PCBmodE Board Config
 

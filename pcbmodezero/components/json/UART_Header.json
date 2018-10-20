@@ -1,0 +1,101 @@
+{
+"pins":
+  {
+  "1":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [-2.54, 0]
+      }
+    },
+  "2":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [0, 0]
+      }
+    }
+
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [-2.24,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "<—Rx"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [0.3,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "Tx—>"
+        }
+
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+
+
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 2,
+          "location": [0, 0]
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1,
+          "location": [0, 0]
+        }
+      ]
+    },
+    "pin1":
+    {
+      "shapes":
+      [
+  {
+    "layers": ["top","bottom"],
+    "type": "rect",
+          "width": 2,
+          "height": 2,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25}
+  }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

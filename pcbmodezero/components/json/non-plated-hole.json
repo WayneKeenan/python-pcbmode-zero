@@ -1,0 +1,41 @@
+{
+"pins":
+  {
+  "hole":
+    {	
+      "layout": 
+      {
+        "pad": "hole", 
+        "location": [0, 0]
+      }
+    }
+  },
+  "pads":
+  {
+    "hole":
+    {
+      "shapes":
+      [
+	{
+          "type": "circle",
+	  "layers": ["top", "internal", "bottom"],
+	  "style": "fill",
+          "diameter": 1.5,
+          "buffer-to-pour": 1.2,
+          "soldermask": {
+            "type": "circle",
+  	    "layers": ["top", "internal", "bottom"],
+  	    "style": "fill",
+            "diameter": 3.2
+          }
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 2.0
+        }
+      ]
+    }
+  }
+}

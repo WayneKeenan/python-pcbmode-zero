@@ -1,0 +1,98 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-0.95,-1.1],
+        "label": "VIN"
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [0,-1.1],
+        "label": "GND"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [0.95,-1.1],
+        "label": "EN"
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [0.95,1.1],
+        "label": "NC"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-0.95,1.1],
+        "label": "VOUT"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 3.3,
+          "height": 2.0,
+          "location": [0, 0]
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 2.8,
+          "height": 1.5,
+          "location": [0,0]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "outline": 0,
+          "width": 0.7,
+          "height": 1,
+          "radii": {
+            "bl": 0.05, 
+            "br": 0.05, 
+            "tl": 0.05, 
+            "tr": 0.05
+          }
+        }
+      ]
+    }
+  }
+}

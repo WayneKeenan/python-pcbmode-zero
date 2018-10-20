@@ -1,0 +1,138 @@
+{
+"pins":
+  {
+  "M1":
+    {	
+      "layout": 
+      {
+        "pad": "mount-pad", 
+        "location": [-3.42, -1.15]
+      }
+    },
+  "M2":
+    {	
+      "layout": 
+      {
+        "pad": "mount-pad",
+        "rotate": 180,
+        "location": [3.42, -1.15]
+      }
+    },
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-1.75, 0.55]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-1.25, 0.55]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-0.75, 0.55]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [-0.25, 0.55]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [0.25, 0.55]
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [0.75, 0.55]
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [1.25, 0.55]
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pin-pad", 
+        "location": [1.75, 0.55]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 9.43,
+          "height": 4.4,
+          "location": [0, -1.8]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin-pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "height": 1.1,
+          "width": 0.3,
+          "location": [0, 0],
+	  "radii": {"tl": 0.1, "tr": 0.1, "bl": 0, "br": 0}
+        }
+      ]
+    },
+    "mount-pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "height": 3.1,
+          "width": 2.3,
+          "location": [0, 0],
+	  "radii": {"tl": 0.25, "tr": 0, "bl": 0.25, "br": 0}
+        }
+      ]
+    }
+  }
+}

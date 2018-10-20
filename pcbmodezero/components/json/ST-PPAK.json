@@ -1,0 +1,106 @@
+{
+"pins":
+  {
+  "1-EN":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-2.54, -2.4]
+      }
+    },
+  "2-VIN":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-1.27, -2.4],
+        "rotation" : 0
+      }
+    },
+  "4-VOUT":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [1.27, -2.4],
+        "rotation" : 0
+      }
+    },
+  "5-ADJ":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [2.54, -2.4],
+        "rotation" : 0
+      }
+    },
+  "TAB-GND":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [0, 4.25],
+        "rotation" : 0
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 7.1, 
+          "height": 6.7,
+          "location": [0, 2.5],
+          "style": "stroke"
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 6.6,
+          "height": 6.2,
+          "location": [0.0, 2.5]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top"],
+	  "width": 6.7,
+	  "height": 6.7,
+	  "radii": {"tl": 0.3, "tr": 0.3, "bl": 0.1, "br": 0.1}
+	}
+      ]
+    },
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top"],
+	  "width": 0.8,
+	  "height": 3,
+	  "radii": {"tl": 0, "tr": 0, "bl": 0.1, "br": 0.1}
+	}
+      ]
+    }
+  }
+}

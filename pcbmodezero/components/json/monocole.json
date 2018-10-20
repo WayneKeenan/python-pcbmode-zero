@@ -1,0 +1,66 @@
+{
+  "pins":
+  {
+  "1-LED":
+    {	
+      "layout": 
+      {
+	"pad": "long", 
+	"location": [0, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+    "long":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+	  "layers": ["top"],
+          "outline": 0,
+          "diameter": 1.9,
+          "offset": [0, 0] 
+        },
+        {
+          "type": "circle",
+	  "layers": ["bottom"],
+          "outline": 0,
+          "diameter": 1.9,
+          "offset": [0, 0] 
+        },
+        {
+          "type": "rect",
+	  "layers": ["bottom"],
+          "width": 1.9,
+          "height": 6.5,
+          "location": [0,3.25],
+          "radii": {"tl": 0.3, "tr": 0.3, "bl": 0, "br": 0}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1,
+          "offset": [0, 0]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+"pins":
+  {
+  "1TH":
+    {
+      "layout":
+      {
+        "pad": "th_pin",
+        "location": [0, -2.5]
+      }
+    },
+    "2TH":
+      {
+        "layout":
+        {
+          "pad": "th_pin",
+          "location": [0, 2.5]
+        }
+      }
+  },
+  "layout":
+  {
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+
+    "th_pin":
+    {
+      "shapes":
+      [
+        {
+	  "layers": ["top", "bottom"],
+          "type": "circle",
+          "diameter": 1.6
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.8
+        }
+      ]
+    }
+
+
+  }
+}

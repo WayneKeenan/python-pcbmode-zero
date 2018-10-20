@@ -1,12 +1,13 @@
 {
 "pins":
   {
-  "DRILL":
+  "MH":
     {	
       "layout": 
       {
-        "pad": "drill", 
-        "location": [0, 0]
+        "pad": "drill",
+        "location": [0, 0],
+        "show-label": false
       }
     }
   },
@@ -17,6 +18,9 @@
     },
     "assembly":
     {
+      "shapes":
+      [
+      ]
     }
   },
   "pads":
@@ -26,21 +30,16 @@
       "shapes":
       [
         {
-          "layers": ["top","bottom"],
           "type": "circle",
-          "solderpaste": {},
-          "diameter": 1,
-          "buffer-to-pour": 1.2,
-          "soldermask": {
-            "type": "circle",
-            "diameter": 3.2
-          }
+          "diameter": 4.0,
+          "layers": ["top", "bottom"],
+          "location": [-0.5,-0.5]
         }
       ],
       "drills":
       [
         {
-          "diameter": 3
+          "diameter": 2.0
         }
       ]
     }

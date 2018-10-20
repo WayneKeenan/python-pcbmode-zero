@@ -1,0 +1,58 @@
+{
+"pins":
+  {
+  "1TH":
+    {
+      "layout":
+      {
+        "pad": "th",
+        "location": [-1.27, 0]
+      }
+    },
+  "2TH":
+    {
+      "layout":
+      {
+        "pad": "th",
+        "location": [1.27, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top", "bottom"],
+          "type": "circle",
+          "style": "stroke",
+          "diameter": 5,
+          "location": [0, 0]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "th":
+    {
+      "shapes":
+      [
+	{
+          "buffer-to-pour": 0.2,
+	  "layers": ["top","bottom"],
+	  "type": "circle",
+	  "diameter": 1.9
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

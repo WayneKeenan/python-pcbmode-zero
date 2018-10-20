@@ -1,0 +1,131 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [-1.5, 0.5],
+	"label": "VOUT"
+      }
+    },
+  "2":
+    {
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [-1.5, 0],
+	"label": "FB"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [-1.5, -0.5],
+	"label": "GND"
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [1.5, -0.5],
+        "label": "EN"
+      }
+    },
+  "5":
+    {
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [1.5, 0],
+        "label": "NC"
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [1.5, 0.5],
+        "label": "VCC"
+      }
+    },
+  "M1":
+    {	
+      "layout": 
+      {
+        "pad": "thermal-pad", 
+        "location": [0, 0],
+        "label": "GND"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top"],
+          "diameter": 0.3,
+          "style": "fill",
+          "location": [-2.1, 0.5]
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layer": ["top"],
+          "width": 2.6,
+          "height": 1.8,
+          "location": [0, 0]
+        },
+        {
+          "type": "circle",
+          "layer": ["top"],
+          "diameter": 0.3,
+          "style": "fill",
+          "location": [-1.0, 0.5]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "smd":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 0.6,
+          "height": 0.2
+        }
+      ]
+    },
+    "thermal-pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 1.5,
+          "height": 1.4,
+          "radii": {"tl": 0.1, "tr": 0.1, "bl": 0.1, "br": 0.1},
+          "style": "fill"
+        }
+      ]
+    }
+  }
+}

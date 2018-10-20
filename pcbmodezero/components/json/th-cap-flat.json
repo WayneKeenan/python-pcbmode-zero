@@ -1,0 +1,80 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [-1.27, 10],
+        "rotation": 0
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [1.27, 10],
+        "rotation": 0
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+	{
+          "type": "path",
+	  "style": "stroke",
+          "stroke-width": 0.5,
+	  "value": "m 0,0 0,9.5",
+          "layers": ["top"],
+	  "location": [-1.27, 5.25]
+	},
+	{
+          "type": "path",
+	  "style": "stroke",
+          "stroke-width": 0.5,
+	  "value": "m 0,0 0,9.5",
+          "layers": ["top"],
+	  "location": [1.27, 5.25]
+	},
+	{
+          "type": "rect",
+	  "width": 3.5,
+          "height": 3,
+          "layers": ["top"],
+	  "style": "fill",
+	  "location": [0, -1]
+	}
+      ]
+    }
+  },
+  "pads":
+  {
+    "th":
+    {
+      "shapes":
+      [
+	{
+	  "type": "circle",
+	  "outline": 0,
+          "layers": ["top", "bottom"],
+	  "diameter": 1.9 
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

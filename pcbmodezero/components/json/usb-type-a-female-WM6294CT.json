@@ -1,0 +1,187 @@
+{
+"pins":
+  {
+  "M1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-8.3, 9.1]
+      }
+    },
+  "M2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [8.3, 9.1]
+      }
+    },
+  "M3":
+    {	
+      "layout": 
+      {
+        "pad": "2.3mm", 
+        "location": [-7.85, 0]
+      }
+    },
+  "M4":
+    {	
+      "layout": 
+      {
+        "pad": "2.3mm", 
+        "location": [7.85, 0]
+      }
+    },
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "1mm-sq", 
+        "location": [-3.5, -0.85]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "1mm", 
+        "location": [-1, -0.85]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "1mm", 
+        "location": [1, -0.85]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "1mm", 
+        "location": [3.5, -0.85]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        { 
+          "type": "rect",
+          "width": 0.3,
+          "height": 1,
+          "location": [0, 0],
+          "style": "fill"
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 13.1,
+          "height": 9.9,
+          "location": [0, 6.7]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "2.3mm":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 3.5,
+          "offset": [0, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 2.3
+        }
+      ]
+    },
+    "1mm-sq":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 1.6,
+          "height": 1.6,
+          "layers": ["top", "bottom"],
+          "radii": {"tl": 0.2, "tr": 0.2, "bl": 0.2, "br": 0.2}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    },
+    "1mm":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 1.6,
+          "offset": [0, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    },
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 2.6,
+          "height": 2.4,
+          "radii": {
+            "bl": 0.3, 
+            "br": 0.3, 
+            "tl": 0.3, 
+            "tr": 0.3
+          }
+        },
+        {
+          "type": "rect",
+          "layers": ["bottom"],
+          "width": 2.6,
+          "height": 2.4,
+          "soldermask": {},
+          "radii": {
+            "bl": 0.3, 
+            "br": 0.3, 
+            "tl": 0.3, 
+            "tr": 0.3
+          }
+        }
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,283 @@
+{
+  "pins":
+  {
+  "a":
+    {	
+      "layout": 
+      {
+	"pad": "led", 
+	"location": [0, 8.2]
+      }
+    },
+  "b":
+    {	
+      "layout": 
+      {
+	"pad": "led-270", 
+	"location": [4.1, 4.1]
+      }
+    },
+  "c":
+    {	
+      "layout": 
+      {
+	"pad": "led-270", 
+	"location": [4.1, -4.1]
+      }
+    },
+  "d":
+    {
+      "layout": 
+      {
+	"pad": "led-180", 
+	"location": [0, -8.2]
+      }
+    },
+  "e":
+    {
+      "layout": 
+      {
+	"pad": "led-90", 
+	"location": [-4.1, -4.1]
+      }
+    },
+  "f":
+    {
+      "layout": 
+      {
+	"pad": "led-90", 
+	"location": [-4.1, 4.1]
+      }
+    },
+  "g":
+    {
+      "layout": 
+      {
+	"pad": "led-180", 
+	"location": [0, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 5,
+          "height": 2,
+	  "layers": ["top"],
+          "location": [0,8.2] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 2,
+          "height": 5,
+	  "layers": ["top"],
+          "location": [4.1,4.1] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 2,
+          "height": 5,
+	  "layers": ["top"],
+          "location": [4.1,-4.1] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 5,
+          "height": 2,
+	  "layers": ["top"],
+          "location": [0,-8.2] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 2,
+          "height": 5,
+	  "layers": ["top"],
+          "location": [-4.1,-4.1] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 2,
+          "height": 5,
+	  "layers": ["top"],
+          "location": [-4.1,4.1] 
+	},
+	{
+	  "type": "rect",
+          "style": "fill",
+          "width": 5,
+          "height": 2,
+	  "layers": ["top"],
+          "location": [0,0] 
+	}
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+	  "layers": ["top", "bottom"],
+          "outline": 0,
+          "diameter": 1.65,
+          "offset": [0, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1,
+          "offset": [0, 0]
+        }
+      ]
+    },
+    "led":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top", "bottom"],
+          "width": 1.65,
+          "height": 1.65,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25},
+          "location": [-1.27,0]
+        },
+        {
+          "type": "circle",
+	  "layers": ["top", "bottom"],
+          "outline": 0,
+          "diameter": 1.65,
+          "location": [1.27, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.0,
+          "location": [-1.27,0]
+        },
+        {
+          "diameter": 1.0,
+          "location": [1.27,0]
+        }
+      ]
+    },
+    "led-180":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top", "bottom"],
+          "width": 1.65,
+          "height": 1.65,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25},
+          "location": [1.27,0]
+        },
+        {
+          "type": "circle",
+	  "layers": ["top", "bottom"],
+          "outline": 0,
+          "diameter": 1.65,
+          "location": [-1.27, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.0,
+          "location": [-1.27,0]
+        },
+        {
+          "diameter": 1.0,
+          "location": [1.27,0]
+        }
+      ]
+    },
+    "led-90":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top", "bottom"],
+          "width": 1.65,
+          "height": 1.65,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25},
+          "location": [0,-1.27]
+        },
+        {
+          "type": "circle",
+	  "layers": ["top", "bottom"],
+          "outline": 0,
+          "diameter": 1.65,
+          "location": [0,1.27] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.0,
+          "location": [0,-1.27]
+        },
+        {
+          "diameter": 1.0,
+          "location": [0,1.27]
+        }
+      ]
+    },
+    "led-270":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top", "bottom"],
+          "width": 1.65,
+          "height": 1.65,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25},
+          "location": [0,1.27]
+        },
+        {
+          "type": "circle",
+	  "layers": ["top", "bottom"],
+          "outline": 0,
+          "diameter": 1.65,
+          "location": [0,-1.27] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.0,
+          "location": [0,-1.27]
+        },
+        {
+          "diameter": 1.0,
+          "location": [0,1.27]
+        }
+      ]
+    }
+  }
+}

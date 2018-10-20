@@ -1,0 +1,184 @@
+{
+"pins":
+  {
+  "1":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, 3.81],
+        "label": "1A"
+      }
+    },
+  "2":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, 2.54],
+        "label": "1Y"
+      }
+    },
+  "3":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, 1.27],
+        "label": "2A"
+      }
+    },
+  "4":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, 0],
+        "label": "2Y"
+      }
+    },
+  "5":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, -1.27],
+        "label": "3A"
+      }
+    },
+  "6":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, -2.54],
+        "label": "3Y"
+      }
+    },
+  "7":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [-2.7, -3.81],
+        "label": "GND"
+      }
+    },
+  "8":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, -3.81],
+        "label": "4Y"
+      }
+    },
+  "9":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, -2.54],
+        "label": "4A'"
+      }
+    },
+  "10":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, -1.27],
+        "label": "5Y"
+      }
+    },
+  "11":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7,  0],
+        "label": "5A"
+      }
+    },
+  "12":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, 1.27],
+        "label": "6Y"
+      }
+    },
+  "13":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, 2.54],
+        "label": "6A"
+      }
+    },
+  "14":
+    {
+      "layout":
+      {
+        "pad": "pad",
+        "location": [2.7, 3.81],
+        "label": "VCC"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "text",
+          "layers": ["top"],
+          "style": "fill",
+          "location": [-5.2,4.5],
+          "font-family": "UbuntuMono-R-webfont",
+          "font-size": "2",
+          "value":"1"
+        },
+        {
+          "type":"circle",
+          "style":"stroke",
+          "diameter":1.85,
+          "stroke-width":"0.25",
+          "location": [-5.2,4.45]
+
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "height": 9,
+          "width": 4
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 2.0,
+          "height": 0.6,
+          "layers": ["top"]
+        }
+      ]
+    }
+  }
+}

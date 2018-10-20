@@ -1,0 +1,127 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [-6.35, 0.127],
+        "label": "DTR"
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [-3.81, -0.127],
+        "label": "RX"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [-1.27, 0.127],
+        "label": "TX"
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "th-sq", 
+        "location": [1.27, -0.127],
+        "label": "VCC"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [3.81, 0.127],
+        "label": "CTS"
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [6.35, -0.127],
+        "label": "GND"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 15.24,
+          "height": 1.4
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "th":
+    {
+      "shapes":
+      [
+	{
+	  "type": "circle",
+	  "layers": ["top", "bottom"],
+	  "outline": 0,
+	  "diameter": 1.9,
+	  "offset": [0, 0] 
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    },
+    "th-sq":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top", "bottom"],
+          "width": 1.9,
+          "height": 1.9,
+          "offset": [0, 0],
+          "radii": {
+            "tl": 0.3,
+            "bl": 0.3,
+            "tr": 0.3,
+            "br": 0.3
+          }
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "info": {
+    "description": "",
+    "manufacturer": "AMS",
+    "part-number": "AS1130-BSST-SSOP28",
+    "suppliers": {
+      "farnell": ""
+    },
+    "notes": ""
+  },
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 4.225],
+        "label": "GND"
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 3.575],
+        "label": "CS6"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 2.925],
+        "label": "VDD"
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 2.275],
+        "label": "CS7"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 1.625],
+        "label": "CS8"
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 0.975],
+        "label": "CS9"
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, 0.325],
+        "label": "GND"
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -0.325],
+        "label": "CS11"
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -0.975],
+        "label": "CS10"
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -1.625],
+        "label": "VDD"
+      }
+    },
+  "11":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -2.275],
+        "label": "IRQ"
+      }
+    },
+  "12":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -2.925],
+        "label": "SYNC"
+      }
+    },
+  "13":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -3.575],
+        "label": "RSTN"
+      }
+    },
+  "14":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.38, -4.225],
+        "label": "GND"
+      }
+    },
+  "15":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -4.225],
+        "label": "SCL"
+      }
+    },
+  "16":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -3.575],
+        "label": "SDA"
+      }
+    },
+  "17":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -2.925],
+        "label": "ADDR"
+      }
+    },
+  "18":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -2.275],
+        "label": "VDD"
+      }
+    },
+  "19":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -1.625],
+        "label": "VDD"
+      }
+    },
+  "20":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -0.975],
+        "label": "CS5"
+      }
+    },
+  "21":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, -0.325],
+        "label": "CS4"
+      }
+    },
+  "22":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 0.325],
+        "label": "GND"
+      }
+    },
+  "23":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 0.975],
+        "label": "CS2"
+      }
+    },
+  "24":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 1.625],
+        "label": "CS3"
+      }
+    },
+  "25":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 2.275],
+        "label": "CS0"
+      }
+    },
+  "26":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 2.925],
+        "label": "VDD"
+      }
+    },
+  "27":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 3.575],
+        "label": "CS1"
+      }
+    },
+  "28":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.38, 4.225],
+        "label": "GND"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 5.8,
+          "height": 10.7,
+          "style": "stroke",
+          "stroke-width": 0.2,
+          "location": [0, 0],
+          "radii": {
+            "bl": 0.25, 
+            "br": 0.25, 
+            "tl": 0, 
+            "tr": 0.25
+          }
+        },
+        {
+          "type": "circle",
+          "diameter": 0.6,
+          "style": "fill",
+          "location": [-3.8, 5.2]
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 5.3,
+          "height": 10.2,
+          "location": [0, 0]
+        },
+        {
+          "type": "circle",
+          "diameter": 0.4,
+          "style": "fill",
+          "location": [-2.1, 4.65]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 2.2,
+          "height": 0.43 
+        }
+      ]
+    }
+  }
+}

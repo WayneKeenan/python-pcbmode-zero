@@ -1,0 +1,33 @@
+{
+"pins":
+  {
+  "VIA":
+    {	
+      "layout": 
+      {
+        "pad": "drill", 
+        "location": [0, 0]
+      }
+    }
+  },
+  "pads":
+  {
+    "drill":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 0.2
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.8
+        }
+      ]
+    }
+  }
+}

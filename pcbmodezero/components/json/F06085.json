@@ -1,0 +1,66 @@
+{
+  "pins":
+  {
+  "solder":
+    {
+      "layout":
+      {
+        "pad": "solder",
+        "location": [0, 0]
+      }
+    }
+  },
+  "layout": {
+    "assembly": {
+      "shapes":
+      [
+        {
+          "type":"rect",
+          "style":"stroke",
+          "width":12.7,
+          "height":12.7
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "solder":
+    {
+      "shapes":
+      [
+	      {
+          "soldermask":
+          {
+
+                "type": "circle",
+                "style":"fill",
+                 "diameter": 10
+          },
+          "gerber-lp": "d",
+          "buffer-to-pour": 0.0,
+          "type": "circle",
+	        "layers": ["top"],
+	        "style": "fill",
+          "diameter":9.78
+        },
+        {
+          "soldermask":{},
+          "gerber-lp": "c",
+          "type": "circle",
+          "layers": ["top"],
+          "style": "fill",
+          "diameter":6.98
+        },
+        {
+          "soldermask":{},
+          "gerber-lp": "d",
+          "type": "circle",
+          "layers": ["top"],
+          "style": "fill",
+          "diameter":3.81
+        }
+      ]
+    }
+  }
+}

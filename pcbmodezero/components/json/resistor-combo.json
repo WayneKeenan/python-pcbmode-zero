@@ -1,0 +1,155 @@
+{
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [-7.8, 6.4],
+        "rotate": 0
+      }
+    },
+  "2":
+    {
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [-7.8, -6.4],
+        "rotate": 0
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [-2.6, 6.8],
+        "rotate": 0
+      }
+    },
+  "4":
+    {
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [-2.6, -6.8],
+        "rotate": 0
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [2.6, 6.4],
+        "rotate": 0
+      }
+    },
+  "6":
+    {
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [2.6, -6.4],
+        "rotate": 0
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [7.8, 6.8],
+        "rotate": 0
+      }
+    },
+  "8":
+    {
+      "layout": 
+      {
+	"pad": "pin-sq", 
+	"location": [7.8, -6.8],
+        "rotate": 0
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin-special":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["bottom"],
+          "width": 2,
+          "height": 2,
+          "radii": {"tl": 0.3, "tr": 0.3, "bl": 0.3, "br": 0.3}
+        },
+        {
+          "type": "circle",
+          "layers": ["top"],
+          "diameter": 2
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    },
+    "pin-sq":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top", "bottom"],
+          "width": 2,
+          "height": 2,
+          "radii": {"tl": 0.1, "tr": 0.1, "bl": 0.1, "br": 0.1}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    },
+    "pin-circ":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 2
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    }
+  }
+}

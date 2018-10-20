@@ -1,0 +1,165 @@
+{
+"pins":
+  {
+  "M1":
+    {	
+      "layout": 
+      {
+        "pad": "pad-l", 
+        "location": [-3.35, 0.2]
+      }
+    },
+  "M2":
+    {	
+      "layout": 
+      {
+        "pad": "pad-l", 
+        "location": [3.35, 0.2]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pad-bot", 
+        "location": [1.3, 1]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad-top", 
+        "location": [0.65, 1]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad-bot", 
+        "location": [0, 1]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad-top", 
+        "location": [-0.65, 1]
+      }
+    },
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad-bot", 
+        "location": [-1.3, 1]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 0.3,
+          "height": 1,
+          "location": [0, 0],
+          "style": "fill"
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 7.81,
+          "height": 7.8,
+          "location": [0, 5.2]
+        },
+        {
+          "type": "rect",
+          "width": 6.84,
+          "height": 6.45,
+          "location": [0, 12.325]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad-l":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["bottom"],
+          "width": 2.2,
+          "height": 2.5,
+          "radii": {
+              "bl": 0.2, 
+              "br": 0.2, 
+              "tl": 0.2, 
+              "tr": 0.2
+          },
+          "soldermask": {}
+        },
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 2.2,
+          "height": 2.5,
+          "radii": {
+              "bl": 0.2, 
+              "br": 0.2, 
+              "tl": 0.2, 
+              "tr": 0.2
+          }
+        }
+      ]
+    },
+    "pad-top":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 0.8,
+          "height": 3.0,
+          "radii": {
+            "bl": 0.1, 
+            "br": 0.1, 
+            "tl": 0.1, 
+            "tr": 0.1
+          }
+        }
+      ]
+    },
+    "pad-bot":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["bottom"],
+          "width": 0.8,
+          "height": 3,
+          "radii": {
+            "bl": 0.1, 
+            "br": 0.1, 
+            "tl": 0.1, 
+            "tr": 0.1
+          }
+        }
+      ]
+    }
+  }
+}

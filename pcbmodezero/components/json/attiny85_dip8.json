@@ -1,0 +1,145 @@
+{
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+	"pad": "pin1", 
+	"location": [-3.81, -3.81],
+        "rotate": 180
+      }
+    },
+  "2":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-1.27, -3.81]
+      }
+    },
+  "3":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [1.27, -3.81]
+      }
+    },
+  "4":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [3.81, -3.81]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [3.81, 3.81]
+      }
+    },
+  "6":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [1.27, 3.81],
+        "rotate": 0
+      }
+    },
+  "7":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-1.27, 3.81]
+      }
+    },
+  "8":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-3.81, 3.81]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 10.66,
+          "height": 10.46,
+          "style": "stroke",
+          "stroke-width": 0.2,
+          "radii": {"tl": 0.5, "tr": 0.5, "bl": 0, "br": 0.5}
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+	{
+	  "type": "rect",
+	  "width": 10.16,
+	  "height": 8
+	},
+        {
+          "type": "rect",
+	  "width": 10.16,
+	  "height": 9.96
+	}
+      ]	       
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "outline": 0,
+          "diameter": 1.5,
+          "offset": [0, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.7
+        }
+      ]
+    },
+    "pin1":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "rect",
+          "width": 1.5,
+          "height": 1.5,
+          "radii": {"tl": 0, "tr": 0, "bl": 0.75, "br": 0}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.7
+        }
+      ]
+    }
+  }
+}

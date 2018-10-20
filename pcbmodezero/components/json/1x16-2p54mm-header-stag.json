@@ -1,0 +1,168 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-19.05, 0.127]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-16.51, -0.127]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-13.97, 0.127]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-11.43, -0.127]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-8.89, 0.127]
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-6.35, -0.127]
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-3.81, 0.127]
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [-1.27, -0.127]
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [1.27, 0.127]
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [3.81, -0.127]
+      }
+    },
+  "11":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [6.35, 0.127]
+      }
+    },
+  "12":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [8.89, -0.127]
+      }
+    },
+  "13":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [11.43, 0.127]
+      }
+    },
+  "14":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [13.97, -0.127]
+      }
+    },
+  "15":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [16.51, 0.127]
+      }
+    },
+  "16":
+    {	
+      "layout": 
+      {
+        "pad": "pin", 
+        "location": [19.05, -0.127]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+	{
+	  "layers": ["top","bottom"],
+	  "type": "circle",
+	  "diameter": 1.9 
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

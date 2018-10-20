@@ -1,0 +1,88 @@
+{
+"pins":
+  {
+  "a":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [-0.85, -1.45],
+	"label": "T1"
+      }
+    },
+  "b":
+    {
+      "layout": 
+      {
+        "pad": "smd-l", 
+        "location": [0, 1.1],
+	"label": "SLIDER"
+      }
+    },
+  "c":
+    {	
+      "layout": 
+      {
+        "pad": "smd", 
+        "location": [0.85, -1.45],
+	"label": "T2"
+      }
+    }
+  },
+  "layout":
+  {
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 2.2,
+          "height": 2.81,
+          "location": [0, -0.175]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "smd":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "outline": 0,
+          "width": 0.8,
+          "height": 0.9,
+          "radii": {
+            "bl": 0.1, 
+            "br": 0.1, 
+            "tl": 0, 
+            "tr": 0
+          }
+        }
+      ]
+    },
+    "smd-l":
+    {
+      "shapes":
+      [
+	{
+	  "type": "rect",
+          "layers": ["top"],
+	  "outline": 0,
+	  "width": 1.4,
+	  "height": 0.9,
+	  "radii": {
+	    "bl": 0, 
+	    "br": 0, 
+	    "tl": 0.1, 
+	    "tr": 0.1
+	  }
+	}
+      ]
+    }
+  }
+}

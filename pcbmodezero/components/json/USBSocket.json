@@ -1,0 +1,114 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.50,3.58]
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-1.0, 3.58]
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [1.0, 3.58]
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.50, 3.58]
+      }
+    },
+  "5-mount1":
+    {	
+      "layout": 
+      {
+        "pad": "mounting hole", 
+        "location": [-6.57,0.0]
+      }
+    },
+  "6-mount2":
+    {	
+      "layout": 
+      {
+        "pad": "mounting hole", 
+        "location": [6.57,0.0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 0.3, 
+          "height": 1,
+          "location": [0, 0],
+          "style": "fill"
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 13.1,
+          "height": 14.0,
+          "location": [0.0,-2.4]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "layers": ["top"],
+	  "width": 1.12,
+	  "height": 2.880,
+	  "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25}
+	}
+      ]
+    },
+    "mounting hole":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "diameter": 3.0
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 2.30
+        }
+      ]
+    }
+  }
+}

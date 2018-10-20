@@ -1,0 +1,201 @@
+{
+"pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-8.89,-4.4],
+        "label": "1A",
+        "rotate": 180
+      }
+    },
+  "2":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-8.89,4.4],
+        "label": "1B"
+      }
+    },
+  "3":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-6.35,-4.4],
+        "label": "2A",
+        "rotate": 180
+      }
+    },
+  "4":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-6.35,4.4],
+        "label": "2B"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.81,-4.4],
+        "label": "3A",
+        "rotate": 180
+      }
+    },
+  "6":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-3.81,4.4],
+        "label": "3B"
+      }
+    },
+  "7":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-1.27,-4.4],
+        "label": "4A",
+        "rotate": 180
+      }
+    },
+  "8":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [-1.27,4.4],
+        "label": "4B"
+      }
+    },
+  "9":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [1.27,-4.4],
+        "label": "5A",
+        "rotate": 180
+      }
+    },
+  "10":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [1.27,4.4],
+        "label": "5B"
+      }
+    },
+  "11":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.81,-4.4],
+        "label": "6A",
+        "rotate": 180
+      }
+    },
+  "12":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [3.81,4.4],
+        "label": "6B"
+      }
+    },
+  "13":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [6.35,-4.4],
+        "label": "7A",
+        "rotate": 180
+      }
+    },
+  "14":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [6.35,4.4],
+        "label": "7B"
+      }
+    },
+  "15":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [8.89,-4.4],
+        "label": "8A",
+        "rotate": 180
+      }
+    },
+  "16":
+    {	
+      "layout": 
+      {
+        "pad": "pad", 
+        "location": [8.89,4.4],
+        "label": "8B"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        { 
+          "type": "rect",
+          "layers": ["top"],
+          "width": 20.72,
+          "height": 6.5,
+          "location": [0,0]
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "height": 6,
+          "width": 20.2
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pad":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 1.1,
+          "height": 2.0,
+          "layers": ["top"],
+	  "radii": {"tl": 0.25, "tr": 0.25, "bl": 0, "br": 0}
+        }
+      ]      
+    }
+  }
+}

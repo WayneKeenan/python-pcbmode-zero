@@ -1,0 +1,51 @@
+{
+"pins":
+  {
+  "POS-1":
+    {	
+      "layout": 
+      {
+        "pad": "jumper", 
+        "location": [0, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top"],
+          "type": "rect",
+          "style": "stroke",
+          "stroke-width": 0.2,
+          "width": 3,
+          "height": 3 
+        }
+      ]   
+    },
+    "assembly":
+    {
+    }
+  },
+  "pads":
+  {
+    "jumper":
+    {
+      "shapes":
+      [
+        {
+          "type": "path",
+          "value": "m 15.402888,-8.8776063 0.934725,0 c 0,0.7763942 0,1.5527884 0,2.3291826 l -0.936932,0 0,-2.3291826 0.0022,0 z m -0.502158,0 0,2.3291826 -0.959754,0 c 0,-0.7763942 0,-1.5527884 0,-2.3291826 z",
+          "soldermask": {
+            "type": "rect",
+            "width": 2.39,
+            "height": 2.39 
+          }
+        }
+      ]      
+    }
+  }
+}

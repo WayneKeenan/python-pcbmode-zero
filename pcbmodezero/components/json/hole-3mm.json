@@ -1,0 +1,47 @@
+{
+"pins":
+  {
+  "DRILL":
+    {	
+      "layout": 
+      {
+        "pad": "drill", 
+        "location": [0, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+    },
+    "assembly":
+    {
+    }
+  },
+  "pads":
+  {
+    "drill":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "diameter": 1,
+          "buffer-to-pour": 1.2,
+          "soldermask": {
+            "type": "circle",
+            "diameter": 3.2
+          }
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 3
+        }
+      ]
+    }
+  }
+}

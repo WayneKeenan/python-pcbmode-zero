@@ -1,0 +1,47 @@
+{
+  "pins":
+  {
+  "1":
+    {
+      "layout":
+      {
+	    "pad": "pin",
+	    "location": [0, 0],
+      "rotate": 0,
+      "label": "1"
+      }
+    }
+  },
+  "layout":
+  {
+    "assembly":
+    {
+      "shapes":
+      [
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "outline": 0,
+          "diameter": 1.8,
+          "offset": [0, 0]
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.8
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+	"pad": "corner_pin", 
+	"location": [-2.54, -1.27]
+      }
+    },
+  "2":
+    {
+      "layout": 
+      {
+	"pad": "corner_pin", 
+	"location": [-2.54, 1.27],
+        "rotate": 90
+      }
+    },
+  "3":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [0, -1.27]
+      }
+    },
+  "4":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [0, 1.27]
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+	"pad": "corner_pin", 
+	"location": [2.54, -1.27],
+        "rotate": 270
+      }
+    },
+  "6":
+    {
+      "layout": 
+      {
+	"pad": "corner_pin", 
+	"location": [2.54, 1.27],
+        "rotate": 180
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "width": 8.5,
+          "style": "stroke",
+          "stroke-width": 0.2,
+          "height": 5.33,
+          "radii": {"tl": 0, "tr": 0.5, "bl": 0.5, "br": 0.5}
+        },
+        {
+          "type": "path",
+          "location": [0.36,0],
+          "value": "m -42.631448,13.214381 0.559243,0.559243 m -0.0088,-0.550432 -0.559244,0.559244 m -3.567298,1.840166 -0.79089,0 m -1.493447,0.395445 0,-0.79089 m 1.158177,0.395445 -0.79089,0 m 0.143577,-6.8265939 -0.79089,0 m -3.409688,4.6805399 -0.79089,0 m 10.975516,-2.635125 -0.790891,0 m 1.929522,0 -0.79089,0 m -10.534802,-0.195877 0,0.79089 m -0.389829,-0.79089 0,0.79089 m -0.368572,-0.395445 -0.79089,0 m 7.295954,-2.2449829 -0.79089,0 m -0.381045,-0.395446 0,0.790891 m 7.07938,1.2545249 0,0.79089",
+          "style": "stroke",
+          "stroke-width": 0.2
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+	  "width": 8,
+	  "height": 4.83
+        },
+        {
+          "type": "rect",
+	  "width": 12.32,
+	  "height": 8
+        }
+      ]	 
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "diameter": 1.7
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    },
+    "corner_pin":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "rect",
+          "width": 1.7,
+          "height": 1.7,
+          "radii": {"tl": 0, "tr": 0, "bl": 0.75, "br": 0}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.1
+        }
+      ]
+    }
+  }
+}

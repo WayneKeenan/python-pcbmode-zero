@@ -1,0 +1,51 @@
+{
+"pins":
+  {
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "font-family": "UbuntuMono-R-webfont", 
+          "font-size": "2.5mm",
+          "layers": ["bottom"],
+          "letter-spacing": "0mm", 
+          "line-height": "2.54mm", 
+          "location": [
+            -25, 
+            -6.35
+          ], 
+          "rotate": 90, 
+          "style": "fill", 
+          "type": "text", 
+          "value": "OFF          ON"
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 62.5,
+          "height": 37
+        },
+        {
+          "type": "rect",
+          "layers": ["top"],
+          "width": 5.5,
+          "height": 9,
+          "location": [-25.25,-7]
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+  }
+}

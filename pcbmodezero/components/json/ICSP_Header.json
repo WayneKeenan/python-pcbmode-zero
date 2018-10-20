@@ -1,0 +1,192 @@
+{
+"pins":
+  {
+  "1":
+    {
+      "layout":
+      {
+        "pad": "pin1",
+        "location": [-5.08, -0.127]
+      }
+    },
+  "2":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [-2.54, 0.127]
+      }
+    },
+  "3":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [0, -0.127]
+      }
+    },
+  "4":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [2.54, 0.127]
+      }
+    },
+  "5":
+    {
+      "layout":
+      {
+        "pad": "pin",
+        "location": [5.08, -0.127]
+      }
+    },
+    "6":
+      {
+        "layout":
+        {
+          "pad": "pin",
+          "location": [7.62, -0.127]
+        }
+      }
+
+
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [-4.08,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "MCLR"
+        },
+        {
+          "layers": ["top"],
+          "location": [-3.4,2.1],
+          "rotate": 135,
+          "style":"stroke",
+          "type":"path",
+          "stroke-width":0.2,
+          "value": "m -24.446585,-28.674882 2.439114,1e-6"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [-1.54,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "Vdd"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [1,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "Vss"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [3.54,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "PGD"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [ 6.08,2.5],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "PGC"
+        },
+        {
+          "layers": ["top"],
+          "font-family": "UbuntuMono-R-webfont",
+          "location": [8.62,2.4],
+          "font-size": "1.6mm",
+          "rotate": 135,
+          "style": "fill",
+          "type": "text",
+          "value": "NC"
+        },
+        {
+          "layers": ["bottom"],
+          "type":"path",
+          "location":[-5.08,2],
+          "style":"fill",
+          "scale":0.7,
+          "rotate":90,
+          "value":"m -30.376718,-31.470922 c -0.133508,0.0052 -0.239339,0.114441 -0.240295,0.248047 0,0.428398 0,0.856795 0,1.285193 -6.35e-4,0.185933 0.194683,0.307483 0.361218,0.224792 0.428398,-0.214113 0.856795,-0.428225 1.285193,-0.642338 0.184627,-0.09205 0.184627,-0.355472 0,-0.447518 -0.428398,-0.214113 -0.856795,-0.428225 -1.285193,-0.642338 -0.03751,-0.0186 -0.07909,-0.02749 -0.120923,-0.02584 0,1e-6 0,1e-6 0,2e-6 z"
+        }
+
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+
+
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "layers": ["top", "bottom"],
+          "diameter": 2,
+          "location": [0, 0]
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1,
+          "location": [0, 0]
+        }
+      ]
+    },
+    "pin1":
+    {
+      "shapes":
+      [
+  {
+    "layers": ["top","bottom"],
+    "type": "rect",
+          "width": 2,
+          "height": 2.1,
+          "radii": {"tl": 0.25, "tr": 0.25, "bl": 0.25, "br": 0.25}
+  }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

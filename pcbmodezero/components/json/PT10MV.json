@@ -1,0 +1,74 @@
+{
+  "pins":
+  {
+    "01":{"layout":{"pad": "pin","location": [-2.5,-5],"label": ""}},
+    "02":{"layout":{"pad": "pin","location": [2.5,-5],"label": ""}},
+    "03":{"layout":{"pad": "pin","location": [0,5],"label": ""}},
+    "04":{"layout":{"pad": "hole","location": [0,0],"label": "", "buffer-to-pour": 1}}
+
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "circle",
+          "style":"fill",
+           "diameter": 10.3
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+
+        {
+          "type": "circle",
+           "diameter": 11.5
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+    	{
+    	  "layers": ["top","bottom"],
+    	  "type": "circle",
+    	  "diameter": 2.3
+    	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1.3
+        }
+      ]
+    },
+    "hole":
+    {
+      "shapes":
+      [
+        {
+          "gerber-lp": "c",
+          "type": "circle",
+          "layers": ["top"],
+          "style": "fill",
+          "diameter":5.3
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 5.1
+        }
+      ]
+    }
+  }
+}

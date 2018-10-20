@@ -1,0 +1,62 @@
+{
+"pins":
+  {
+  "1TH":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [-5.5, 0]
+      }
+    },
+  "2TH":
+    {	
+      "layout": 
+      {
+        "pad": "th", 
+        "location": [5.5, 0]
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+        {
+          "type":"rect",
+          "width":2.55,
+          "height":1.4
+        }
+      ]
+    }
+  },
+  "pads":
+  {
+    "th":
+    {
+      "shapes":
+      [
+	{
+	  "layers": ["top","bottom"],
+	  "type": "circle",
+          "solderpaste": {},
+	  "diameter": 1.9
+	}
+      ],
+      "drills":
+      [
+        {
+          "diameter": 1
+        }
+      ]
+    }
+  }
+}

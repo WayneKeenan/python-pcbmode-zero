@@ -1,0 +1,153 @@
+{
+  "pins":
+  {
+  "1":
+    {	
+      "layout": 
+      {
+	"pad": "pin1", 
+	"location": [-3.81, -3.81],
+        "rotate": 180,
+        "label": "VDD"
+      }
+    },
+  "2":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-1.27, -3.81],
+        "label": "RA5"
+      }
+    },
+  "3":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [1.27, -3.81],
+        "label": "RA4"
+      }
+    },
+  "4":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [3.81, -3.81],
+        "label": "RA3"
+      }
+    },
+  "5":
+    {	
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [3.81, 3.81],
+        "label": "RA2"
+      }
+    },
+  "6":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [1.27, 3.81],
+        "rotate": 0,
+        "label": "RA1"
+      }
+    },
+  "7":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-1.27, 3.81],
+        "label": "RA0"
+      }
+    },
+  "8":
+    {
+      "layout": 
+      {
+	"pad": "pin", 
+	"location": [-3.81, 3.81],
+        "label": "VSS"
+      }
+    }
+  },
+  "layout":
+  {
+    "silkscreen":
+    {
+      "shapes":
+      [
+        {
+          "type": "path",
+          "value": "m -15.215887,-2.819922 c -0.0083,-0.4366908 -0.564445,-1.1825 -0.564445,-1.1825 0,-1.1825 0,-2.365 0,-3.5475 0,-0.276142 0.223858,-0.5 0.5,-0.5 3.22,0 6.44,0 9.66,0 0.276142,0 0.5,0.223858 0.5,0.5 0,3.1533333 0,6.3066667 0,9.46 0,0.276142 -0.223858,0.5 -0.5,0.5 -3.3866667,0 -6.773333,0 -10.16,0 0,-1.3075 0,-2.615 0,-3.9225 0,0 0.573421,-0.832874 0.564445,-1.3075 z",
+          "width": 10.66,
+          "height": 10.46,
+          "style": "stroke",
+          "radii": {"tl": 0.5, "tr": 0.5, "bl": 0, "br": 0.5}
+        }
+      ]
+    },
+    "assembly":
+    {
+      "shapes":
+      [
+	{
+	  "type": "rect",
+	  "width": 10.16,
+	  "height": 8
+	},
+        {
+          "type": "rect",
+	  "width": 10.16,
+	  "height": 9.96
+	}
+      ]	       
+    }
+  },
+  "pads":
+  {
+    "pin":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "circle",
+          "outline": 0,
+          "diameter": 1.5,
+          "offset": [0, 0] 
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.7
+        }
+      ]
+    },
+    "pin1":
+    {
+      "shapes":
+      [
+        {
+          "layers": ["top","bottom"],
+          "type": "rect",
+          "width": 1.5,
+          "height": 1.5,
+          "radii": {"tl": 0, "tr": 0, "bl": 0.75, "br": 0}
+        }
+      ],
+      "drills":
+      [
+        {
+          "diameter": 0.7
+        }
+      ]
+    }
+  }
+}

@@ -229,14 +229,14 @@ class PCBmodEZero:
         return self.writeJSON(self.routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
 
     @classmethod
-    def createComponent(self, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
+    def createComponent(cls, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
         c = PCBmodEZero.configItem()
         c.footprint = footprint
         c.layer = layer
         c.location = location
         c.rotate = rotate
         c.show = show
-        c.silkscreen.refdef.show = True
+        c.silkscreen.refdef.show = silkscreen_refdef_show
         return c
 
 
