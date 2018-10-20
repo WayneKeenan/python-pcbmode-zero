@@ -17,7 +17,7 @@ py_component_mappings = {
     'led-1206': led_1206
 }
 
-def findLibraryComponent(name):
+def find_library_component(name):
 
     if name in py_component_mappings:
         return py_component_mappings[name]

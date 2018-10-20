@@ -8,12 +8,12 @@ pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Component Library
 
-pcb.addLibraryComponent('via')
-pcb.addLibraryComponent('led-1206')
+pcb.add_library_component('via')
+pcb.add_library_component('led-1206')
 
 # Board Component instances
 
-led1 = pcb.configItem()
+led1 = pcb.create_config_item()
 led1.footprint = 'led-1206'
 led1.layer = "bottom"
 led1.location = [-11.535056, 9.321493]
@@ -126,7 +126,7 @@ pcb.outline.shape.height = 22
 pcb.outline.shape.width = 51
 pcb.outline.shape.radii = dict(bl=3, br=3, tl=3, tr=3)
 pcb.outline.shape.type = "path"
-pcb.outline.shape.value=pcb.parseShapeSVG('outline.svg')
+pcb.outline.shape.value=pcb.parse_shape_svg('outline.svg')
 
 
 pcb.shapes = {}
@@ -150,10 +150,10 @@ pcb.vias.default_via = "VIA"
 
 # Routing
 
-pcb.addRoute([Line(3+0j, 3-1j), Line(3+0j, 3.5+0j)])
-pcb.addRoute([CubicBezier(1+1j, 2+2j, 4+2j, 5+1j)], layer='top')
-pcb.addVia([1.5, 2])
-pcb.addVia([4.5, 2])
+pcb.add_route([Line(3 + 0j, 3 - 1j), Line(3 + 0j, 3.5 + 0j)])
+pcb.add_route([CubicBezier(1 + 1j, 2 + 2j, 4 + 2j, 5 + 1j)], layer='top')
+pcb.add_via([1.5, 2])
+pcb.add_via([4.5, 2])
 
 
 pcb.save()

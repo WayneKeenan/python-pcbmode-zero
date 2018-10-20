@@ -5,7 +5,7 @@ from pcbmodezero import PCBmodEZero
 LED_SVG_RESOURCE = pkg_resources.resource_filename(__name__, "led-1206.svg")
 
 
-led_1206 = PCBmodEZero.configItem()
+led_1206 = PCBmodEZero.create_config_item()
 
 led_1206.pins['1'].layout.pad = 'smd'
 led_1206.pins['1'].layout.location = [-1.8, 0]
@@ -38,7 +38,7 @@ led_1206.layout.assembly.shapes = [
 led_1206.pads.smd.shapes = [
     {
         "type": "path",
-        "value": PCBmodEZero.readSVG(LED_SVG_RESOURCE),
+        "value": PCBmodEZero.read_svg(LED_SVG_RESOURCE),
         "rotate": 90,
         "width": 1.5,
         "height": 1.6,

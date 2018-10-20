@@ -26,23 +26,23 @@ class PCBmodEZero:
         self.component_library = {}
 
 
-        self.components= self.configItem()
-        self.config = self.configItem()
-        self.distances = self.configItem()
-        self.documentation = self.configItem()
-        self.layer_control = self.configItem()
-        self.gerber = self.configItem()
-        self.files = self.configItem()
-        self.drills = self.configItem()
-        self.drill_index = self.configItem()
-        self.outline = self.configItem()
-        self.shapes = self.configItem()
-        self.soldermask = self.configItem()
-        self.solderpaste = self.configItem()
-        self.stackup = self.configItem()
-        self.vias = self.configItem()
+        self.components= self.create_config_item()
+        self.config = self.create_config_item()
+        self.distances = self.create_config_item()
+        self.documentation = self.create_config_item()
+        self.layer_control = self.create_config_item()
+        self.gerber = self.create_config_item()
+        self.files = self.create_config_item()
+        self.drills = self.create_config_item()
+        self.drill_index = self.create_config_item()
+        self.outline = self.create_config_item()
+        self.shapes = self.create_config_item()
+        self.soldermask = self.create_config_item()
+        self.solderpaste = self.create_config_item()
+        self.stackup = self.create_config_item()
+        self.vias = self.create_config_item()
 
-        self.routing = self.configItem()
+        self.routing = self.create_config_item()
         self.routing.routes.bottom = {}
         self.routing.routes.top = {}
         self.routing.vias = {}
@@ -107,8 +107,8 @@ class PCBmodEZero:
         self.vias.default_via = "VIA"
 
         # Defaults users can clone into their config
-        self.defaults = self.configItem()
-        self.defaults.documentaion = self.configItem()
+        self.defaults = self.create_config_item()
+        self.defaults.documentaion = self.create_config_item()
         self.defaults.documentation.font_family = "Overlock-Regular-OTF-webfont"
         self.defaults.documentation.font_size = "1.5mm"
         self.defaults.documentation.letter_spacing = "0mm"
@@ -125,7 +125,7 @@ class PCBmodEZero:
         self.preinit_pcbmode()
 
     @classmethod
-    def configItem(cls):
+    def create_config_item(cls):
         return jsontree.mapped_jsontree_class(cls.underscore2minus)()
 
 
@@ -172,7 +172,7 @@ class PCBmodEZero:
             raise ValueError
         return name.replace('_', '-')
 
-    def writeJSON(self, json_obj, filepath):
+    def write_json(self, json_obj, filepath):
         json_txt = jsontree.dumps(json_obj, indent=4)
         #print (all_json)
 
@@ -187,7 +187,7 @@ class PCBmodEZero:
         return jsontree.clone(src)
 
     def save(self):
-        all = self.configItem()
+        all = self.create_config_item()
         all.components = self.clone(self.components)
         all.config = self.clone(self.config)
         all.distances = self.clone(self.distances)
@@ -204,10 +204,10 @@ class PCBmodEZero:
         all.stackup = self.clone(self.stackup)
         all.vias = self.clone(self.vias)
 
-        self.writeJSON(all, self.board_json_filepath)
+        self.write_json(all, self.board_json_filepath)
 
         self.saveComponents()
-        self.saveRouting()
+        self.save_routing()
         chdir(self.boards_root_dir)
         try:
             oldargv = sys.argv
@@ -220,19 +220,19 @@ class PCBmodEZero:
 
 
     @classmethod
-    def readSVG(cls, filepath):
+    def read_svg(cls, filepath):
         paths, attributes = svg2paths(filepath)
 
         for path in paths:
             return absolute_to_relative_path(path.d())
 
 
-    def parseShapeSVG(self, svg_filename):
-        return self.readSVG(join(self.board_shape_dirpath, svg_filename))
+    def parse_shape_svg(self, svg_filename):
+        return self.read_svg(join(self.board_shape_dirpath, svg_filename))
 
 
-    def parseComponentSVG(self, svg_filename):
-        return self.readSVG(join(self.board_components_dirpath, svg_filename))
+    def parse_component_svg(self, svg_filename):
+        return self.read_svg(join(self.board_components_dirpath, svg_filename))
 
     def addComponent(self, component, component_name):
         if component_name in self.component_library:
@@ -240,24 +240,24 @@ class PCBmodEZero:
         self.component_library[component_name] = component
 
 
-    def addLibraryComponent(self, component_name):
-        self.addComponent(findLibraryComponent(component_name), component_name)
+    def add_library_component(self, component_name):
+        self.addComponent(find_library_component(component_name), component_name)
 
 
-    def saveComponent(self, component, component_name):
-        return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
+    def save_component(self, component, component_name):
+        return self.write_json(component, join(self.board_components_dirpath, component_name + '.json'))
 
     def saveComponents(self):
         for name, component in self.component_library.items():
-            self.saveComponent(component, name)
+            self.save_component(component, name)
 
 
-    def saveRouting(self):
-        return self.writeJSON(self.routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
+    def save_routing(self):
+        return self.write_json(self.routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
 
     @classmethod
-    def createComponent(cls, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
-        c = PCBmodEZero.configItem()
+    def create_component(cls, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
+        c = PCBmodEZero.create_config_item()
         c.footprint = footprint
         c.layer = layer
         c.location = location
@@ -267,8 +267,8 @@ class PCBmodEZero:
         return c
 
 
-    def createVia(self, location, layer='top', footprint='via'):
-        via = self.configItem()
+    def create_via(self, location, layer='top', footprint='via'):
+        via = self.create_config_item()
         via.footprint = footprint
         via.layer = layer
         via.location = location
@@ -278,30 +278,30 @@ class PCBmodEZero:
         via.silkscreen.refdef.show = False
         return via
 
-    def _addRouteToLayer(self, route, layer='bottom'):
+    def _add_route_to_layer(self, route, layer='bottom'):
         style = route['style'] if 'style' in route else ''
         key = utils.digest("%s%s" % (route['value'], style))
 
         self.routing.routes[layer][key] = route
 
-    def addRoute(self, paths, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+    def add_route(self, paths, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
 
         path = Path(*paths)
 
-        self._addRouteToLayer({
+        self._add_route_to_layer({
             "stroke-width": stroke_width,
             "style": style,
             "type": type,
             "value": absolute_to_relative_path(path.d())
         }, layer=layer)
 
-    def addVia(self, location, layer='top', footprint='via'):
-        via = self.createVia(location, layer, footprint)
+    def add_via(self, location, layer='top', footprint='via'):
+        via = self.create_via(location, layer, footprint)
         key = utils.digest("%s%s" % (via.location[0], via.location[1]))
         self.routing.vias[key] = via
 
 
-    def addDocumentation(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
+    def add_documentation(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
         self.documentation[section] = self.clone(self.defaults.documentation)
         self.documentation[section].location = location
         self.documentation[section].value =text
@@ -309,11 +309,11 @@ class PCBmodEZero:
         self.documentation[section].line_height = line_height
 
 
-    def addOutline(self, shape_name, width, height, radii, type="path"):
+    def add_outline(self, shape_name, width, height, radii, type="path"):
         self.outline.shape.height = height
         self.outline.shape.width = width
         self.outline.shape.radii = radii
         self.outline.shape.type = type
-        self.outline.shape.value=self.parseShapeSVG(shape_name)
+        self.outline.shape.value=self.parse_shape_svg(shape_name)
 
-from pcbmodezero.components import findLibraryComponent
+from pcbmodezero.components import find_library_component

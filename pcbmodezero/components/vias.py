@@ -1,6 +1,6 @@
 from pcbmodezero import PCBmodEZero
 
-via = PCBmodEZero.configItem()
+via = PCBmodEZero.create_config_item()
 
 via.pins['VIA'].layout.pad = 'via'
 via.pins['VIA'].layout.location = [0, 0]
