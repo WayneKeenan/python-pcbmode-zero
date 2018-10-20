@@ -1,8 +1,6 @@
 from pcbmodezero import PCBmodEZero, Line, CubicBezier
 
-BOARD_NAME="binco_minified"
-
-pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
+pcb = PCBmodEZero(board_name = "binco_minified", boards_dir='../sandpit/boards')
 
 # Import from built-in Component Library
 
@@ -10,13 +8,13 @@ pcb.addLibraryComponent('via')
 pcb.addLibraryComponent('led-1206')
 pcb.addLibraryComponent('555-SOIC8')
 
-# Create Component instances
+# Create Component instances, directly in JSON-like tree
 
 pcb.components.LED1 = pcb.createComponent('led-1206', [-11.5, 9.5], rotate=90)
 pcb.components.LED10 = pcb.createComponent('led-1206', [-5, 9.5], rotate=90)
 pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  9])
 
-# PCBmodE Board Config
+# Use helper function to create documentation JSON
 
 pcb.addDocumentaion('board_details',  [-12.039821, -30.831399],   "Board details: ...")
 pcb.addDocumentaion('manufacturing',  [-12.243017, -18.347399],  "Manufacturing:...")
@@ -24,11 +22,7 @@ pcb.addDocumentaion('pcbmode',  [-12.243017, -18.347399],  "Designed with PCBmod
 
 pcb.drill_index.location = [-27.971101, -47.126399]
 
-pcb.outline.shape.height = 22
-pcb.outline.shape.width = 51
-pcb.outline.shape.radii = dict(bl=3, br=3, tl=3, tr=3)
-pcb.outline.shape.type = "path"
-pcb.outline.shape.value=pcb.parseShapeSVG('outline.svg')
+pcb.addOutline('outline.svg', width = 51, height = 22, radii=dict(bl=3, br=3, tl=3, tr=3))
 
 # Routing
 

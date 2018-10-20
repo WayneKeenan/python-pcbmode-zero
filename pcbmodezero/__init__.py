@@ -308,4 +308,12 @@ class PCBmodEZero:
         self.documentation[section].font_size = font_size
         self.documentation[section].line_height = line_height
 
+
+    def addOutline(self, shape_name, width, height, radii, type="path"):
+        self.outline.shape.height = height
+        self.outline.shape.width = width
+        self.outline.shape.radii = radii
+        self.outline.shape.type = type
+        self.outline.shape.value=self.parseShapeSVG(shape_name)
+
 from pcbmodezero.components import findLibraryComponent
