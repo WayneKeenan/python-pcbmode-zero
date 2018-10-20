@@ -264,6 +264,9 @@ class PCB:
         c.silkscreen.refdef.show = silkscreen_refdef_show
         return c
 
+    def add_component(self, library_compnent_name, board_component_name, location, **kwargs):
+        self.components[board_component_name]=  self.create_component(library_compnent_name, location, **kwargs)
+
 
     def create_via(self, location, layer='top', footprint='via'):
         via = self.create_config_item()
@@ -338,12 +341,22 @@ class PCB:
 
         return location
 
-    def connect_pins(self, c1, p1, c2, p2, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+    def route_pins(self, c1, p1, c2, p2, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
 
         start_pin = self.board_component_pin_location(c1, p1)
         end_pin = self.board_component_pin_location(c2, p2)
 
         self.add_route([Line(complex(start_pin[0], start_pin[1]), complex(end_pin[0], end_pin[1]))])
+
+
+    @classmethod
+    def create_square_shape(cls, w, h):
+        return [
+            Line(complex( 0, 0), complex( 0, h)),
+            Line(complex( 0, h), complex( w, h)),
+            Line(complex( w, h), complex( w, 0)),
+            Line(complex( w, 0), complex( 0, 0)),
+        ]
 
 
 from pcbmodezero.components import find_library_component
