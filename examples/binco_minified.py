@@ -1,42 +1,20 @@
 from pcbmodezero import PCBmodEZero, Line, CubicBezier
 
-
 BOARD_NAME="binco_minified"
 
 pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
-# Component Library
+# Import from built-in Component Library
 
 pcb.addLibraryComponent('via')
 pcb.addLibraryComponent('led-1206')
 pcb.addLibraryComponent('555-SOIC8')
 
-# Board Component instances
+# Create Component instances
 
-led1 = pcb.configItem()
-led1.footprint = 'led-1206'
-led1.layer = "bottom"
-led1.location = [-11.535056, 9.321493]
-led1.rotate = 90
-led1.show = True
-led1.silkscreen.refdef.show = True
-
-# Copy LED and modify its location
-led10 = pcb.clone(led1)
-led10.location = [-3.838085, 9.321493]
-
-
-timer = pcb.configItem()
-timer.footprint = '555-SOIC8'
-timer.layer = "bottom"
-timer.location = [5, 9]
-timer.rotate = 180
-timer.show = True
-timer.silkscreen.refdef.show = True
-
-pcb.components.LED1 = led1
-pcb.components.LED10 = led10
-pcb.components.timer = timer
+pcb.components.LED1 = pcb.createComponent('led-1206', [-11.5, 9.5], rotate=90)
+pcb.components.LED10 = pcb.createComponent('led-1206', [-5, 9.5], rotate=90)
+pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  7])
 
 # PCBmodE Board Config
 
