@@ -18,47 +18,11 @@ pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  9])
 
 # PCBmodE Board Config
 
-pcb.config.name = BOARD_NAME
-pcb.config.no_docs = False
-pcb.config.no_drill_index = False
-pcb.config.no_flashes = False
-pcb.config.no_layer_index = False
-pcb.config.rev = "first"
-pcb.config.style_layout = "default"
-pcb.config.units = "mm"
-
-pcb.documentation.board_details = pcb.clone(pcb.defaults.documentation)
-pcb.documentation.board_details.location = [-12.039821, -30.831399]
-pcb.documentation.board_details.value = "Board details: ..."
-
-pcb.documentation.manufacturing = pcb.clone(pcb.defaults.documentation)
-pcb.documentation.manufacturing.location = [-12.243017, -18.347399]
-pcb.documentation.manufacturing.value = "Manufacturing:..."
-
-pcb.documentation.pcbmode = pcb.clone(pcb.defaults.documentation)
-pcb.documentation.pcbmode.font_size = "1.2mm"
-pcb.documentation.pcbmode.line_height = "1.2mm"
-pcb.documentation.pcbmode.location = [-15.849812, -41.294399]
-pcb.documentation.pcbmode.value = "Designed with PCBmodE"
+pcb.addDocumentaion('board_details',  [-12.039821, -30.831399],   "Board details: ...")
+pcb.addDocumentaion('manufacturing',  [-12.243017, -18.347399],  "Manufacturing:...")
+pcb.addDocumentaion('pcbmode',  [-12.243017, -18.347399],  "Designed with PCBmodE:...", font_size = "1.2mm", line_height = "1.2mm")
 
 pcb.drill_index.location = [-27.971101, -47.126399]
-
-pcb.layer_control.assembly = dict(hide=False, lock=False, place=True)
-pcb.layer_control.conductor.hide = False
-pcb.layer_control.conductor.lock = False
-pcb.layer_control.conductor.place = True
-pcb.layer_control.conductor.pads = dict(hide=False, lock=False, place=True)
-pcb.layer_control.conductor.pours = dict(hide=False, lock=True, place=True)
-pcb.layer_control.conductor.routing = dict(hide=False, lock=False, place=True)
-pcb.layer_control.dimensions= dict(hide=False, lock=True, place=True)
-pcb.layer_control.documentation = dict(hide=False, lock=False, place=True)
-pcb.layer_control.drills = dict(hide=False, lock=False, place=True)
-pcb.layer_control.origin= dict(hide=False, lock=True, place=False)
-pcb.layer_control.outline = dict(hide=False, lock=True, place=True)
-pcb.layer_control.placement = dict(hide=False, lock=False, place=True)
-pcb.layer_control.silkscreen = dict(hide=False, lock=False, place=True)
-pcb.layer_control.soldermask = dict(hide=False, lock=False, place=True)
-pcb.layer_control.solderpaste = dict(hide=True, lock=True, place=False)
 
 pcb.outline.shape.height = 22
 pcb.outline.shape.width = 51

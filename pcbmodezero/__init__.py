@@ -16,7 +16,7 @@ from pcbmode.utils.svg import absolute_to_relative_path
 
 class PCBmodEZero:
 
-    def __init__(self, boards_dir, board_name):
+    def __init__(self, boards_dir, board_name, rev="first"):
         self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
         self.board_root_filepath = "{}/boards/{}".format(self.boards_root_dir, self.board_name)
@@ -47,7 +47,34 @@ class PCBmodEZero:
         self.routing.routes.top = {}
         self.routing.vias = {}
 
+        self.config.name = self.board_name
+        self.config.no_docs = False
+        self.config.no_drill_index = False
+        self.config.no_flashes = False
+        self.config.no_layer_index = False
+        self.config.rev = rev
+        self.config.style_layout = "default"
+        self.config.units = "mm"
+
         # Board config baseline defaults (TODO: read from PCBmodE config?)
+
+        self.layer_control.assembly = dict(hide=False, lock=False, place=True)
+        self.layer_control.conductor.hide = False
+        self.layer_control.conductor.lock = False
+        self.layer_control.conductor.place = True
+        self.layer_control.conductor.pads = dict(hide=False, lock=False, place=True)
+        self.layer_control.conductor.pours = dict(hide=False, lock=True, place=True)
+        self.layer_control.conductor.routing = dict(hide=False, lock=False, place=True)
+        self.layer_control.dimensions = dict(hide=False, lock=True, place=True)
+        self.layer_control.documentation = dict(hide=False, lock=False, place=True)
+        self.layer_control.drills = dict(hide=False, lock=False, place=True)
+        self.layer_control.origin = dict(hide=False, lock=True, place=False)
+        self.layer_control.outline = dict(hide=False, lock=True, place=True)
+        self.layer_control.placement = dict(hide=False, lock=False, place=True)
+        self.layer_control.silkscreen = dict(hide=False, lock=False, place=True)
+        self.layer_control.soldermask = dict(hide=False, lock=False, place=True)
+        self.layer_control.solderpaste = dict(hide=True, lock=True, place=False)
+
 
         self.gerber.decimals = 6
         self.gerber.digits = 6
@@ -274,5 +301,11 @@ class PCBmodEZero:
         self.routing.vias[key] = via
 
 
+    def addDocumentaion(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
+        self.documentation[section] = self.clone(self.defaults.documentation)
+        self.documentation[section].location = location
+        self.documentation[section].value =text
+        self.documentation[section].font_size = font_size
+        self.documentation[section].line_height = line_height
 
 from pcbmodezero.components import findLibraryComponent
