@@ -1,8 +1,5 @@
 from pcbmodezero import PCBmodEZero, Line, CubicBezier
 
-from pcbmodezero.components import findLibraryComponent
-from pcbmodezero.components.leds import led_1206
-from pcbmodezero.components.vias import default_via
 
 BOARD_NAME="binco_minified"
 
@@ -10,10 +7,9 @@ pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Component Library
 
-pcb.addLibraryComponent(default_via, 'via')
-pcb.addLibraryComponent(led_1206, 'led-1206')
-
-pcb.addLibraryComponent(findLibraryComponent('555-SOIC8'), 'timer')
+pcb.addLibraryComponent('via')
+pcb.addLibraryComponent('led-1206')
+pcb.addLibraryComponent('555-SOIC8')
 
 # Board Component instances
 
@@ -31,7 +27,7 @@ led10.location = [-3.838085, 9.321493]
 
 
 timer = pcb.configItem()
-timer.footprint = 'timer'
+timer.footprint = '555-SOIC8'
 timer.layer = "bottom"
 timer.location = [5, 9]
 timer.rotate = 180
@@ -44,7 +40,7 @@ pcb.components.timer = timer
 
 # PCBmodE Board Config
 
-pcb.config.name = 'test1'
+pcb.config.name = BOARD_NAME
 pcb.config.no_docs = False
 pcb.config.no_drill_index = False
 pcb.config.no_flashes = False

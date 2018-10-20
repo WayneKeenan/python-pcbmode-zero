@@ -4,7 +4,6 @@ from pcbmodezero import PCBmodEZero
 
 LED_SVG_RESOURCE = pkg_resources.resource_filename(__name__, "led-1206.svg")
 
-print("(((((((((((((" + LED_SVG_RESOURCE)
 
 led_1206 = PCBmodEZero.configItem()
 

@@ -12,6 +12,8 @@ from pcbmode import pcbmode
 from pcbmode.utils import utils
 from pcbmode.utils.svg import absolute_to_relative_path
 
+
+
 class PCBmodEZero:
 
     def __init__(self, boards_dir, board_name):
@@ -205,10 +207,15 @@ class PCBmodEZero:
     def parseComponentSVG(self, svg_filename):
         return self.readSVG(join(self.board_components_dirpath, svg_filename))
 
-    def addLibraryComponent(self, component, component_name):
+    def addComponent(self, component, component_name):
         if component_name in self.component_library:
             raise ValueError("%s already exists.".format(component_name))
         self.component_library[component_name] = component
+
+
+    def addLibraryComponent(self, component_name):
+        self.addComponent(findLibraryComponent(component_name), component_name)
+
 
     def saveComponent(self, component, component_name):
         return self.writeJSON(component, join(self.board_components_dirpath, component_name + '.json'))
@@ -253,3 +260,7 @@ class PCBmodEZero:
         via = self.createVia(location, layer, footprint)
         key = utils.digest("%s%s" % (via.location[0], via.location[1]))
         self.routing.vias[key] = via
+
+
+
+from pcbmodezero.components import findLibraryComponent

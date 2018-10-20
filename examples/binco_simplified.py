@@ -8,8 +8,8 @@ pcb = PCBmodEZero(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Component Library
 
-pcb.addLibraryComponent(default_via, 'via')
-pcb.addLibraryComponent(led_1206, 'led-1206')
+pcb.addLibraryComponent('via')
+pcb.addLibraryComponent('led-1206')
 
 # Board Component instances
 

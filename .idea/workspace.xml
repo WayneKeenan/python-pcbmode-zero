@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b120be0-9444-458e-8d26-27680cc80841" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/555-SOIC8.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/0805-cap.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/0805-led.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/0805.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/74HC4020-SOIC16.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/CR2032-battery-holder-smd.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/DT10340N.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/DT1245.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/F10450.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/GX05300.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/GX07500.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/SOT23-nFET.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/mounting-hole.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/smd-header.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/solder-blob-jumper.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pcbmodezero/components/json/via-l.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/examples/binco_minified.py" afterPath="$PROJECT_DIR$/examples/binco_minified.py" />
+      <change beforePath="$PROJECT_DIR$/examples/binco_simplified.py" afterPath="$PROJECT_DIR$/examples/binco_simplified.py" />
       <change beforePath="$PROJECT_DIR$/pcbmodezero/__init__.py" afterPath="$PROJECT_DIR$/pcbmodezero/__init__.py" />
       <change beforePath="$PROJECT_DIR$/pcbmodezero/components/__init__.py" afterPath="$PROJECT_DIR$/pcbmodezero/components/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/pcbmodezero/components/leds.py" afterPath="$PROJECT_DIR$/pcbmodezero/components/leds.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +33,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_pcbmode_zero$test_svg1.coverage" NAME="test_svg1 Coverage Results" MODIFIED="1539979593884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sandpit" />
-    <SUITE FILE_PATH="coverage/python_pcbmode_zero$binco_minified.coverage" NAME="binco_minified Coverage Results" MODIFIED="1540021222744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
-    <SUITE FILE_PATH="coverage/python_pcbmode_zero$binco_simplified.coverage" NAME="binco_simplified Coverage Results" MODIFIED="1540019075241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/python_pcbmode_zero$binco_minified.coverage" NAME="binco_minified Coverage Results" MODIFIED="1540022692775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/python_pcbmode_zero$binco_simplified.coverage" NAME="binco_simplified Coverage Results" MODIFIED="1540022728201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/python_pcbmode_zero$main.coverage" NAME="binco simplified Coverage Results" MODIFIED="1539790907242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -26,23 +42,39 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pcbmodezero/components/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binco_minified.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="leds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pcbmodezero/components/leds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binco_minified.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/binco_minified.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binco_simplified.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,8 +82,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pcbmodezero/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="207" column="8" lean-forward="false" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="8" />
+            <state relative-caret-position="314">
+              <caret line="216" column="79" lean-forward="false" selection-start-line="216" selection-start-column="79" selection-end-line="216" selection-end-column="79" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,11 +154,12 @@
         <option value="$PROJECT_DIR$/sandpit/test_svg1.py" />
         <option value="$PROJECT_DIR$/pcbmodezero/components/led_1206.py" />
         <option value="$PROJECT_DIR$/pcbmodezero/components/vias.py" />
-        <option value="$PROJECT_DIR$/examples/binco_simplified.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pcbmodezero/__init__.py" />
+        <option value="$PROJECT_DIR$/pcbmodezero/components/leds.py" />
         <option value="$PROJECT_DIR$/pcbmodezero/components/__init__.py" />
         <option value="$PROJECT_DIR$/examples/binco_minified.py" />
+        <option value="$PROJECT_DIR$/pcbmodezero/__init__.py" />
+        <option value="$PROJECT_DIR$/examples/binco_simplified.py" />
       </list>
     </option>
   </component>
@@ -281,11 +314,11 @@
       <recent name="$PROJECT_DIR$/sandpit/svg/in" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pcbmodezero/components/json" />
       <recent name="$PROJECT_DIR$/pcbmodezero/components" />
       <recent name="$PROJECT_DIR$/sandpit/boards/binco_simplified/components" />
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/sandpit/svg/in" />
-      <recent name="$PROJECT_DIR$/sandpit/svg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,7 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.binco_minified">
+  <component name="RunManager" selected="Python.binco_simplified">
     <configuration name="binco_minified" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -365,8 +398,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.binco_minified" />
-        <item index="1" class="java.lang.String" itemvalue="Python.binco_simplified" />
+        <item index="0" class="java.lang.String" itemvalue="Python.binco_simplified" />
+        <item index="1" class="java.lang.String" itemvalue="Python.binco_minified" />
         <item index="2" class="java.lang.String" itemvalue="Python.test_svg1" />
       </list>
     </recent_temporary>
@@ -389,14 +422,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31353134" sideWeight="0.2985348" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31353134" sideWeight="0.7014652" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5457876" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.6984127" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.45909646" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.45421246" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2783883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -697,26 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcbmodezero/components/leds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3269">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pcbmodezero/components/json/555-SOIC8.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1523">
@@ -743,20 +755,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pcbmodezero/components/leds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pcbmodezero/components/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pcbmodezero/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="207" column="8" lean-forward="false" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="8" />
+        <state relative-caret-position="314">
+          <caret line="216" column="79" lean-forward="false" selection-start-line="216" selection-start-column="79" selection-end-line="216" selection-end-column="79" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -765,11 +783,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/binco_minified.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
