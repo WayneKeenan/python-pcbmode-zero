@@ -47,6 +47,34 @@ class PCBmodEZero:
         self.routing.routes.top = {}
         self.routing.vias = {}
 
+        # Board config baseline defaults
+
+        self.distances.from_pour_to.drill = 0.25
+        self.distances.from_pour_to.outline = 0.4
+        self.distances.from_pour_to.pad = 0.25
+        self.distances.from_pour_to.route = 0.25
+
+        self.distances.soldermask.circle_buffer = 0.05
+        self.distances.soldermask.path_scale = 1.05
+        self.distances.soldermask.rect_buffer = 0.05
+
+        self.distances.solderpaste.circle_buffer = -0.1
+        self.distances.solderpaste.path_scale = 0.9
+        self.distances.solderpaste.rect_buffer = -0.1
+
+        self.files.routing_data = self.board_name + "_routing.json"
+        self.files.routing_svg = self.board_name + ".svg"
+
+        self.soldermask.circle_buffer = 0.05
+        self.soldermask.path_scale = 1.05
+        self.soldermask.rect_buffer = 0.05
+        self.solderpaste.circle_buffer = -0.1
+        self.solderpaste.path_scale = 0.9
+        self.solderpaste.rect_buffer = -0.1
+        self.stackup.name = "two-layer"
+        self.vias.default_via = "VIA"
+
+        # Defaults users can clone into their config
         self.defaults = self.configItem()
         self.defaults.documentaion = self.configItem()
         self.defaults.documentation.font_family = "Overlock-Regular-OTF-webfont"
@@ -58,6 +86,10 @@ class PCBmodEZero:
         self.defaults.documentation.style = "fill"
         self.defaults.documentation.type = "text"
         self.defaults.documentation.value = "Warning: No Text Set"
+
+
+
+
         self.preinit_pcbmode()
 
     @classmethod
@@ -170,7 +202,7 @@ class PCBmodEZero:
     def parseComponentSVG(self, svg_filename):
         return self.readSVG(join(self.board_components_dirpath, svg_filename))
 
-    def addComponent(self, component, component_name):
+    def addLibraryComponent(self, component, component_name):
         if component_name in self.component_library:
             raise ValueError("%s already exists.".format(component_name))
         self.component_library[component_name] = component
