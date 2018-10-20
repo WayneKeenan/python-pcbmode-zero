@@ -1,4 +1,4 @@
-from pcbmodezero import PCBmodEZero
+from pcbmodezero import PCBmodEZero, Path, Line, CubicBezier
 
 # The PCBmodE 'binco' board turned into Python config (massively simplified from original)
 
@@ -101,7 +101,7 @@ led_1206.pads.drill.drills = [
     }
 ]
 
-print(led_1206)
+#print(led_1206)
 
 pcb.saveComponent(led_1206, 'led-1206')
 
@@ -242,37 +242,12 @@ pcb.stackup.name = "two-layer"
 pcb.vias.default_via = "VIA"
 
 
-
 # Routing
 
+pcb.addRoute(Path(Line(3+0j, 3-1j), Line(3+0j, 3.5+0j)))
+pcb.addRoute(Path(CubicBezier(1+1j, 2+2j, 4+2j, 5+1j)), layer='top')
+pcb.addVia([1.5, 2])
+pcb.addVia([4.5, 2])
 
-from pcbmode.utils.svg import absolute_to_relative_path
-from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc
-
-seg1 = CubicBezier(3, 1, 2, 4)
-seg2 = Line(2, 2.5)
-path = Path(seg1, seg2)
-
-route1 = {
-    "stroke-width": 0.4,
-    "style": "stroke",
-    "type": "path",
-    "value": absolute_to_relative_path(path.d())
-}
-
-
-v = CubicBezier(4.6147194+11.014797j, 4.6618894+11.474522j, 4.6113294+11.597255j, 4.6387524+12.071022j)
-
-route2 = {
-    "stroke-width": 0.3,
-    "style": "stroke",
-    "type": "path",
-    "value": absolute_to_relative_path(Path(v).d())
-}
-
-
-pcb.addRoute(route1)
-pcb.addRoute(route2)
-pcb.addVia(pcb.createVia([15.798446, -0.15201]))
 
 pcb.save()

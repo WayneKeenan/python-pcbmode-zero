@@ -4,9 +4,9 @@ from os.path import join
 import sys
 import io
 
-
 import jsontree
-from svgpathtools import svg2paths
+
+from svgpathtools import Path, Line, QuadraticBezier, CubicBezier, Arc, svg2paths
 
 from pcbmode import pcbmode
 from pcbmode.utils import utils
@@ -108,6 +108,8 @@ class PCBmodEZero:
         with open(filepath, 'w') as file:
             file.write(json_txt)
 
+    def dumpJSON(self, json_obj):
+        print(jsontree.dumps(json_obj, indent=4))
 
     def clone(self, src):
         return jsontree.clone(src)
@@ -175,11 +177,21 @@ class PCBmodEZero:
         via.silkscreen.refdef.show = False
         return via
 
-    def addRoute(self, route):
-        key = utils.digest("%s%s" % (route['value'], route['style']))
+    def _addRouteToLayer(self, route, layer='bottom'):
+        style = route['style'] if 'style' in route else ''
+        key = utils.digest("%s%s" % (route['value'], style))
 
-        self.routing.routes.bottom[key] = route
+        self.routing.routes[layer][key] = route
 
-    def addVia(self, via):
+    def addRoute(self, path, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
+        self._addRouteToLayer({
+            "stroke-width": stroke_width,
+            "style": style,
+            "type": type,
+            "value": absolute_to_relative_path(path.d())
+        }, layer=layer)
+
+    def addVia(self, location, layer='top', footprint='via'):
+        via = self.createVia(location, layer, footprint)
         key = utils.digest("%s%s" % (via.location[0], via.location[1]))
         self.routing.vias[key] = via
