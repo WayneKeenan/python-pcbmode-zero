@@ -341,12 +341,11 @@ class PCB:
 
         return location
 
-    def route_pins(self, c1, p1, c2, p2, layer='bottom', stroke_width=0.4, style="stroke", type="path"):
-
+    def route_pins(self, c1, p1, c2, p2, **kwargs):
         start_pin = self.board_component_pin_location(c1, p1)
         end_pin = self.board_component_pin_location(c2, p2)
 
-        self.add_route([Line(complex(start_pin[0], start_pin[1]), complex(end_pin[0], end_pin[1]))])
+        self.add_route([Line(complex(start_pin[0], start_pin[1]), complex(end_pin[0], end_pin[1]))], **kwargs)
 
 
     @classmethod
