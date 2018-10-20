@@ -5,29 +5,26 @@ Experimental Python frontend to PCBmodE.
 
 Highlights:
 
-- concise: 'flat dot' syntax for configuration (preserving original JSON names)
+- Concise*: 'flat dot' syntax for configuration (preserving original JSON names)
 - default values: defaulted configuration options (e.g. documentation font defaults)
 - reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
 - programatic configuration: e.g. reuse config generated from functions, use constants etc
 - procedural generation: e.g. use loops to generate paths and component placements
 - less clutter: e.g. import SVG files for 'paths', rather than using embedded SVG path command strings
 - automated:  triggers `pcbmode` command utility to generate output files
+- Built-in component library (e.g. resistors, LEDs, connectors) collected from the Boldport PCBmodE projects
 
 
 
 Status
 ======
 
-Experimental... the current example_ should hopefully give a flavour of what it currently is, and what could be.
+Experimental... the current examples_ should hopefully give a flavour of what it currently is, and what could be.
 
-Currently only generation of the main [board].json file is supported.
+On the TODO list is the support :
 
-On the TODO list is the support of generating:
-
-- [board]_routing.json file
-- shapes/[shape].json files
-- components/[component].json files
-
+- autorouting
+- generating shapes/[shape].json files
 
 Documentation
 =============
@@ -54,5 +51,4 @@ Thanks!
 
 
 .. _Issue: https://github.com/TheBubbleworks/python-pcbmode-zero/issues/
-.. _example: https://github.com/TheBubbleworks/python-pcbmode-zero/blob/master/examples/binco_simplified.py
-
+.. _examples: https://github.com/TheBubbleworks/python-pcbmode-zero/blob/master/examples/
