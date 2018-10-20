@@ -301,7 +301,7 @@ class PCBmodEZero:
         self.routing.vias[key] = via
 
 
-    def addDocumentaion(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
+    def addDocumentation(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
         self.documentation[section] = self.clone(self.defaults.documentation)
         self.documentation[section].location = location
         self.documentation[section].value =text

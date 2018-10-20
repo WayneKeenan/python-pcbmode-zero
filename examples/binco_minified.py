@@ -12,13 +12,13 @@ pcb.addLibraryComponent('555-SOIC8')
 
 pcb.components.LED1 = pcb.createComponent('led-1206', [-11.5, 9.5], rotate=90)
 pcb.components.LED10 = pcb.createComponent('led-1206', [-5, 9.5], rotate=90)
-pcb.components.timer = pcb.createComponent('555-SOIC8', [5,  9])
+pcb.components.TIMER = pcb.createComponent('555-SOIC8', [5,  9])
 
 # Use helper function to create documentation JSON
 
-pcb.addDocumentaion('board_details',  [-12.039821, -30.831399],   "Board details: ...")
-pcb.addDocumentaion('manufacturing',  [-12.243017, -18.347399],  "Manufacturing:...")
-pcb.addDocumentaion('pcbmode',  [-12.243017, -18.347399],  "Designed with PCBmodE:...", font_size = "1.2mm", line_height = "1.2mm")
+pcb.addDocumentation('board_details', [-12.039821, -30.831399], "Board details: ...")
+pcb.addDocumentation('manufacturing', [-12.243017, -18.347399], "Manufacturing:...")
+pcb.addDocumentation('pcbmode', [-12.243017, -18.347399], "Designed with PCBmodE:...", font_size ="1.2mm", line_height ="1.2mm")
 
 pcb.drill_index.location = [-27.971101, -47.126399]
 
@@ -32,3 +32,4 @@ pcb.addVia([1.5, 2])
 pcb.addVia([4.5, 2])
 
 pcb.save()
+
