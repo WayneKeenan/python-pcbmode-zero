@@ -5,8 +5,9 @@ Experimental Python frontend to PCBmodE.
 
 Highlights:
 
+- Concise: Flat 'dot' syntax and helper functions to reduce configuration size
+- Less boiler plate: See the 'Hello PCB' example for a tiny example
 - Familiar: Syntax preserves original JSON names (as far as possible)
-- Concise: Flat 'dot' syntax and helper functio to reduce configuration size
 - Reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
 - Programmatic configuration: e.g. reuse config generated from functions, use constants etc
 - Procedural generation: e.g. use loops to generate paths and component placements
