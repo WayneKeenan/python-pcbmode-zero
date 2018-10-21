@@ -2,68 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b120be0-9444-458e-8d26-27680cc80841" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/binco_minified.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/binco_minified_routing.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/components/555-SOIC8.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/components/led-1206.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/components/timer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_minified/components/via.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_simplified/binco_simplified.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_simplified/binco_simplified_routing.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_simplified/components/led-1206.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/binco_simplified/components/via.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/hello_pcb/components/led-1206.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/hello_pcb/hello_pcb.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/hello_pcb/hello_pcb_routing.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/procedural_pcb_1/components/led-1206.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/procedural_pcb_1/procedural_pcb_1.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/procedural_pcb_1/procedural_pcb_1_routing.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/simple_pcb_1/components/led-1206.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/simple_pcb_1/components/via.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/simple_pcb_1/simple_pcb_1.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/boards/simple_pcb_1/simple_pcb_1_routing.json" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/examples/binco_minified.py" afterPath="$PROJECT_DIR$/examples/binco_minified.py" />
-      <change beforePath="$PROJECT_DIR$/examples/binco_simplified.py" afterPath="$PROJECT_DIR$/examples/binco_simplified.py" />
-      <change beforePath="$PROJECT_DIR$/examples/hello_pcb.py" afterPath="$PROJECT_DIR$/examples/hello_pcb.py" />
-      <change beforePath="$PROJECT_DIR$/examples/procedural_pcb_1.py" afterPath="$PROJECT_DIR$/examples/procedural_pcb_1.py" />
-      <change beforePath="$PROJECT_DIR$/examples/simple_pcb_1.py" afterPath="$PROJECT_DIR$/examples/simple_pcb_1.py" />
-      <change beforePath="$PROJECT_DIR$/pcbmodezero/__init__.py" afterPath="$PROJECT_DIR$/pcbmodezero/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/binco.json" afterPath="$PROJECT_DIR$/boards/binco/binco.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/binco_routing.json" afterPath="$PROJECT_DIR$/boards/binco/binco_routing.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/0805-cap.json" afterPath="$PROJECT_DIR$/boards/binco/components/0805-cap.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/0805-led.json" afterPath="$PROJECT_DIR$/boards/binco/components/0805-led.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/0805.json" afterPath="$PROJECT_DIR$/boards/binco/components/0805.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/555-SOIC8.json" afterPath="$PROJECT_DIR$/boards/binco/components/555-SOIC8.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/74HC4020-SOIC16.json" afterPath="$PROJECT_DIR$/boards/binco/components/74HC4020-SOIC16.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/CR2032-battery-holder-smd.json" afterPath="$PROJECT_DIR$/boards/binco/components/CR2032-battery-holder-smd.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/DT10340N.json" afterPath="$PROJECT_DIR$/boards/binco/components/DT10340N.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/DT1245.json" afterPath="$PROJECT_DIR$/boards/binco/components/DT1245.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/F10450.json" afterPath="$PROJECT_DIR$/boards/binco/components/F10450.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/GX05300.json" afterPath="$PROJECT_DIR$/boards/binco/components/GX05300.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/GX07500.json" afterPath="$PROJECT_DIR$/boards/binco/components/GX07500.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/SOT23-nFET.json" afterPath="$PROJECT_DIR$/boards/binco/components/SOT23-nFET.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/led-1206.json" afterPath="$PROJECT_DIR$/boards/binco/components/led-1206.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/mounting-hole.json" afterPath="$PROJECT_DIR$/boards/binco/components/mounting-hole.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/smd-header.json" afterPath="$PROJECT_DIR$/boards/binco/components/smd-header.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/solder-blob-jumper.json" afterPath="$PROJECT_DIR$/boards/binco/components/solder-blob-jumper.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/via-l.json" afterPath="$PROJECT_DIR$/boards/binco/components/via-l.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/components/via.json" afterPath="$PROJECT_DIR$/boards/binco/components/via.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/docs/infographic.pdf" afterPath="$PROJECT_DIR$/boards/binco/docs/infographic.pdf" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/docs/infographic.svg" afterPath="$PROJECT_DIR$/boards/binco/docs/infographic.svg" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/docs/wrapper.svg" afterPath="$PROJECT_DIR$/boards/binco/docs/wrapper.svg" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/binary.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/binary.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/boldport-logo-b.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/boldport-logo-b.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/count.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/count.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/example.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/example.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/info.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/info.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/shapes/numbers.json" afterPath="$PROJECT_DIR$/boards/binco/shapes/numbers.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco/styles/default/layout.json" afterPath="$PROJECT_DIR$/boards/binco/styles/default/layout.json" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco_minified/shapes/outline.svg" afterPath="$PROJECT_DIR$/boards/binco_minified/shapes/outline.svg" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/binco_simplified/shapes/outline.svg" afterPath="$PROJECT_DIR$/boards/binco_simplified/shapes/outline.svg" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/hello_pcb/.keepdir" afterPath="$PROJECT_DIR$/boards/hello_pcb/.keepdir" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/procedural_pcb_1/.keepdir" afterPath="$PROJECT_DIR$/boards/procedural_pcb_1/.keepdir" />
-      <change beforePath="$PROJECT_DIR$/sandpit/boards/simple_pcb_1/shapes/outline.svg" afterPath="$PROJECT_DIR$/boards/simple_pcb_1/shapes/outline.svg" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/binco_minified.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/binco_minified_routing.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/555-SOIC8.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/led-1206.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/timer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/via.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -108,20 +54,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binco_minified.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binco_minified.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/binco_minified.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="-255">
               <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binco_simplified.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="113" column="17" lean-forward="true" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binco_simplified.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-2055">
               <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding />
             </state>
@@ -192,7 +148,6 @@
         <option value="$PROJECT_DIR$/pcbmodezero/components/leds.py" />
         <option value="$PROJECT_DIR$/pcbmodezero/components/__init__.py" />
         <option value="$PROJECT_DIR$/.gitattributes" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/sandpit/test_skidl_netlist_1.py" />
         <option value="$PROJECT_DIR$/examples/hello_pcb.py" />
@@ -201,6 +156,7 @@
         <option value="$PROJECT_DIR$/examples/binco_simplified.py" />
         <option value="$PROJECT_DIR$/examples/simple_pcb_1.py" />
         <option value="$PROJECT_DIR$/examples/binco_minified.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -211,8 +167,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1468" />
+    <option name="width" value="840" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -258,6 +215,26 @@
               <item name="python-pcbmode-zero" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-pcbmode-zero" type="462c0819:PsiDirectoryNode" />
               <item name="boards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-pcbmode-zero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-pcbmode-zero" type="462c0819:PsiDirectoryNode" />
+              <item name="boards" type="462c0819:PsiDirectoryNode" />
+              <item name="binco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-pcbmode-zero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-pcbmode-zero" type="462c0819:PsiDirectoryNode" />
+              <item name="boards" type="462c0819:PsiDirectoryNode" />
+              <item name="binco" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-pcbmode-zero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-pcbmode-zero" type="462c0819:PsiDirectoryNode" />
+              <item name="boards" type="462c0819:PsiDirectoryNode" />
+              <item name="binco" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python-pcbmode-zero" type="b2602c69:ProjectViewProjectNode" />
@@ -319,7 +296,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="add_unversioned_files" value="true&#10;/Users/wayne/local.projects/pcbmode/pcbmode-zero/python-pcbmode-zero/sandpit/boards/simple_pcb_1/build/paths_db.json&#10;/Users/wayne/local.projects/pcbmode/pcbmode-zero/python-pcbmode-zero/sandpit/boards/hello_pcb/build/paths_db.json" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -478,17 +455,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1468" height="1027" extended-state="0" />
+    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5659186" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31353134" sideWeight="0.6800977" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761276" sideWeight="0.43408135" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.6800977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5819582" sideWeight="0.43408135" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28190744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.041353382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.48229548" order="1" side_tool="false" content_ui="tabs" />
@@ -710,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boards/simple_pcb_1/shapes/outline.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -820,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/simple_pcb_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -836,10 +797,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="113" column="17" lean-forward="true" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/binco_minified.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="-255">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2055">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
       </provider>
