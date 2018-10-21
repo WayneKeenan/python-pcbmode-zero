@@ -1,0 +1,62 @@
+{
+    "routes": {
+        "top": {
+            "4e88dde5f": {
+                "style": "stroke", 
+                "stroke-width": 0.4, 
+                "type": "path", 
+                "value": "m 1.0,1.0 c 1.0,1.0 3.0,1.0 4.0,0.0 "
+            }
+        }, 
+        "bottom": {
+            "dd57aa5f0": {
+                "style": "stroke", 
+                "stroke-width": 0.4, 
+                "type": "path", 
+                "value": "m 3.0,0.0 l 0.0,-1.0 m 0.0,1.0 l 0.5,0.0 "
+            }
+        }
+    }, 
+    "vias": {
+        "0cc941644": {
+            "layer": "top", 
+            "rotate": 0, 
+            "assembly": {
+                "refdef": {
+                    "show": false
+                }
+            }, 
+            "show": true, 
+            "location": [
+                4.5, 
+                2
+            ], 
+            "footprint": "via", 
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        }, 
+        "94617c826": {
+            "layer": "top", 
+            "rotate": 0, 
+            "assembly": {
+                "refdef": {
+                    "show": false
+                }
+            }, 
+            "show": true, 
+            "location": [
+                1.5, 
+                2
+            ], 
+            "footprint": "via", 
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        }
+    }
+}

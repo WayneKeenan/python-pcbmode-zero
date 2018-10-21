@@ -3,7 +3,7 @@ from pcbmodezero import PCB, Line
 (BOARD_WIDTH, BOARD_HEIGHT) = (30, 30)
 BOARD_OUTLINE = PCB.create_square_shape(BOARD_WIDTH, BOARD_HEIGHT)
 
-pcb = PCB(board_name ="simple_pcb_1", boards_dir='../sandpit/boards')
+pcb = PCB(board_name ="simple_pcb_1")
 
 pcb.add_documentation('manufacturing', [0, -BOARD_HEIGHT /2], "Manufacturing:...")
 pcb.add_documentation('board_details', [0, -BOARD_HEIGHT ], "Board details: ...")

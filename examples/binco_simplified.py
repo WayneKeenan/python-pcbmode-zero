@@ -4,7 +4,7 @@ from pcbmodezero.components.vias import default_via
 
 BOARD_NAME="binco_simplified"
 
-pcb = PCB(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
+pcb = PCB(board_name=BOARD_NAME)
 
 # Component Library
 

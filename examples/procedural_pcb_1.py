@@ -4,7 +4,7 @@ from pcbmodezero import PCB
 (BOARD_WIDTH, BOARD_HEIGHT) = (60, 60)
 LED = 'led-1206'
 
-pcb = PCB(board_name ="procedural_pcb_1", boards_dir='../sandpit/boards', width = BOARD_WIDTH, height = BOARD_HEIGHT)
+pcb = PCB(board_name ="procedural_pcb_1", width = BOARD_WIDTH, height = BOARD_HEIGHT)
 
 pcb.use_library_component(LED)
 

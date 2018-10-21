@@ -14,7 +14,7 @@ from pcbmode.utils.svg import absolute_to_relative_path
 
 class PCB:
 
-    def __init__(self, boards_dir, board_name, rev="first", width=None, height=None):
+    def __init__(self, board_name, boards_dir="../boards", rev="first", width=None, height=None):
         self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
         self.board_root_filepath = "{}/boards/{}".format(self.boards_root_dir, self.board_name)
