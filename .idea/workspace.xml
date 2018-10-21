@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b120be0-9444-458e-8d26-27680cc80841" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/examples/hello_pcb.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/examples/procedural_pcb_1.py" afterPath="$PROJECT_DIR$/examples/procedural_pcb_1.py" />
-      <change beforePath="$PROJECT_DIR$/examples/simple_pcb_1.py" afterPath="$PROJECT_DIR$/examples/simple_pcb_1.py" />
-      <change beforePath="$PROJECT_DIR$/pcbmodezero/__init__.py" afterPath="$PROJECT_DIR$/pcbmodezero/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/examples/hello_pcb.py" afterPath="$PROJECT_DIR$/examples/hello_pcb.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,8 +71,8 @@
       <file leaf-file-name="hello_pcb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/hello_pcb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="70" lean-forward="true" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -416,14 +413,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1468" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5659186" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31353134" sideWeight="0.6800977" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761276" sideWeight="0.43408135" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.6800977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761276" sideWeight="0.43408135" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28190744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -775,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/hello_pcb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="70" lean-forward="true" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
           <folding />
         </state>
       </provider>
