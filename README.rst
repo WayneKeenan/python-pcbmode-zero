@@ -20,16 +20,20 @@ Status
 
 Experimental... the current examples_ should hopefully give a flavour of what it currently is, and what could be.
 
-On the TODO list is the support :
+On the TODO list is:
 
-- netlists/autorouting  (https://pypi.org/project/skidl/)
-- rules checking
 - generating shapes/[shape].json files
+
+MAybe the interation of a library or two for:
+
+- netlists
+- autorouting
+- rules checking
 
 Documentation
 =============
 
-It's only the examples at the moment...
+It's only the examples at the moment... but here's an Hello World! example:
 
 .. code:: python
 
@@ -47,7 +51,11 @@ It's only the examples at the moment...
 Install
 =======
 
-TBD
+Ensure PCBmodE is installed and running then install pcbmodezero by running:
+
+.. code: shell
+
+    pip install pcbmodezero
 
 
 Feedback

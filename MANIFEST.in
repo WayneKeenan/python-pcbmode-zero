@@ -1,0 +1,3 @@
+recursive-include pcbmodezero/components *.svg
+recursive-include pcbmodezero/components *.json
+recursive-exclude * *.py[co]
