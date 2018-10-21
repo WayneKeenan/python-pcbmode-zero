@@ -21,7 +21,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['pcbmode', 'jsontree','svgwrite', 'svgpathtools'],
+    install_requires=['jsontree','svgwrite', 'svgpathtools'],
     #tests_require=tests_require,
     #test_suite="setup.test_suite",
     platforms=['Windows', 'Linux', 'MacOS'],

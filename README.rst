@@ -50,7 +50,7 @@ Install
 
 Ensure PCBmodE is installed and running then install pcbmodezero by running:
 
-.. code:
+.. code: :class:
 
     pip install pcbmodezero
 
