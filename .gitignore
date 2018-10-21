@@ -107,9 +107,5 @@ venv.bak/
 
 sandpit/svg/out
 
-sandpit/boards/**/*.json
-sandpit/boards/**/components/*.json
-
-
-boards/**/*.json
-boards/**/components/*.json
+examples/boards/**/*.json
+examples/boards/**/components/*.json
