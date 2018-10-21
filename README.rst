@@ -1,4 +1,4 @@
-PCB
+PCBmodEZero
 ===========
 
 Experimental Python frontend to PCBmodE.
