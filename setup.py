@@ -6,7 +6,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 setup(
     name='pcbmodezero',
-    version="0.0.1",
+    version="0.0.2",
     description="Python frontend to PCBmodE",
     #long_description="\n\n".join([
     #    open(os.path.join(base_dir, "README.md"), "r").read(),
@@ -21,7 +21,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['jsontree','svgwrite', 'svgpathtools'],
+    install_requires=['pcbmode', 'jsontree','svgwrite', 'svgpathtools'],
     #tests_require=tests_require,
     #test_suite="setup.test_suite",
     platforms=['Windows', 'Linux', 'MacOS'],

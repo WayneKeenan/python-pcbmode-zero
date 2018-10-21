@@ -378,9 +378,11 @@ class PCB:
         try:
             oldargv = sys.argv
             sys.argv = sys.argv[0::]
-            sys.argv.extend(['-b', self.board_name, '-m'])
+            sys.argv.extend(['-b', self.board_name, '-m',  '--make-board', '--fab', '--make-pngs'])
             #print(sys.argv)
             pcbmode.main()
+        except Exception as e:
+            print ("Warning: PCBmodE error ignored!")
         finally:
             sys.argv = oldargv
 
