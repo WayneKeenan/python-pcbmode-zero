@@ -48,9 +48,7 @@ It's only the examples at the moment... but here's an Hello World! example:
 Install
 =======
 
-Ensure PCBmodE is installed and running then install pcbmodezero by running:
-
-.. code: :class:
+Ensure PCBmodE is installed and running then install pcbmodezero by running::
 
     pip install pcbmodezero
 
