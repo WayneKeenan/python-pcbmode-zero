@@ -316,7 +316,7 @@ class PCB:
 
         return location
 
-    def route_pins(self, c1, p1, c2, p2, **kwargs):
+    def connect_pins(self, c1, p1, c2, p2, **kwargs):
         start_pin = self.board_component_pin_location(c1, p1)
         end_pin = self.board_component_pin_location(c2, p2)
 

@@ -23,7 +23,7 @@ while x_pos < BOARD_WIDTH/2 - 10 :
 # Connect each LED pins 1 and 2 to the previous LED pins in list.
 
 for led_id in range(1, led_id):
-    pcb.route_pins('LED_%d' % (led_id-1), '1', 'LED_%d' % led_id, '1')
-    pcb.route_pins('LED_%d' % (led_id-1), '2', 'LED_%d' % led_id, '2', layer='top')
+    pcb.connect_pins('LED_%d' % (led_id - 1), '1', 'LED_%d' % led_id, '1')
+    pcb.connect_pins('LED_%d' % (led_id - 1), '2', 'LED_%d' % led_id, '2', layer='top')
 
 pcb.save()

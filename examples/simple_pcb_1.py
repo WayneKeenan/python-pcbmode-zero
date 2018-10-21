@@ -15,8 +15,8 @@ pcb.use_library_component('led-1206')
 pcb.add_component('led-1206', 'LED1', [0,  0])
 pcb.add_component('led-1206', 'LED2', [5, 10])
 
-pcb.route_pins('LED1', '1', 'LED2', '1')
-pcb.route_pins('LED1', '2', 'LED2', '2')
+pcb.connect_pins('LED1', '1', 'LED2', '1')
+pcb.connect_pins('LED1', '2', 'LED2', '2')
 
 pcb.add_outline_path(BOARD_OUTLINE , width = 40, height = 40 )
 
