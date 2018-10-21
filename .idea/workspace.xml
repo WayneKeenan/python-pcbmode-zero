@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b120be0-9444-458e-8d26-27680cc80841" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/binco_minified.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/binco_minified_routing.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/555-SOIC8.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/led-1206.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/timer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/boards/binco_minified/components/via.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,17 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="113" column="17" lean-forward="true" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+            <state relative-caret-position="144">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binco_simplified.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binco_simplified.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/binco_simplified.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2055">
@@ -797,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="113" column="17" lean-forward="true" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/binco_minified.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -817,6 +802,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2055">
           <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
