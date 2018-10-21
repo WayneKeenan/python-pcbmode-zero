@@ -1,6 +1,6 @@
 from pprint import pformat
-from os import chdir
-from os.path import join
+from os import chdir, makedirs
+from os.path import join, exists
 import sys
 import io
 
@@ -231,8 +231,12 @@ class PCB:
     def parse_component_svg(self, svg_filename):
         return self.read_svg(join(self.board_components_dirpath, svg_filename))
 
-    def add_component(self, library_compnent_name, board_component_name, location, **kwargs):
-        self.components[board_component_name]=  self.create_component(library_compnent_name, location, **kwargs)
+    def add_component(self, library_component_name, board_component_name, location, **kwargs):
+        # Auto use library component
+        if library_component_name not in self.component_library:
+            self.use_library_component(library_component_name)
+
+        self.components[board_component_name]=  self.create_component(library_component_name, location, **kwargs)
 
     def save_component(self, component, component_name):
         return self.write_json(component, join(self.board_components_dirpath, component_name + '.json'))
@@ -344,6 +348,11 @@ class PCB:
         ]
 
     def save(self):
+
+        if not exists( self.board_components_dirpath):
+            makedirs(self.board_components_dirpath)
+
+
         all = self.create_config_item()
         all.components = self.clone(self.components)
         all.config = self.clone(self.config)
