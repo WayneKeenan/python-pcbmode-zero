@@ -48,7 +48,7 @@ It's only the examples at the moment... but here's an Hello World! example:
 Install
 =======
 
-Ensure PCBmodE is installed and running then install pcbmodezero by running::
+Ensure PCBmodE is setup_ then install pcbmodezero by running::
 
     pip install pcbmodezero
 
@@ -67,3 +67,4 @@ Thanks!
 
 .. _Issue: https://github.com/TheBubbleworks/python-pcbmode-zero/issues/
 .. _examples: https://github.com/TheBubbleworks/python-pcbmode-zero/blob/master/examples/
+.. _setup: https://pcbmode.readthedocs.io/en/latest/setup.html#setup
