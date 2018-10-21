@@ -5,10 +5,10 @@ Experimental Python frontend to PCBmodE.
 
 Highlights:
 
-- Familure: Syntax preserves original JSON names (as far as possible)
-- Consise: Flat 'dot' syntax and helper functio to reduce configuration size
+- Familiar: Syntax preserves original JSON names (as far as possible)
+- Concise: Flat 'dot' syntax and helper functio to reduce configuration size
 - Reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
-- Programatic configuration: e.g. reuse config generated from functions, use constants etc
+- Programmatic configuration: e.g. reuse config generated from functions, use constants etc
 - Procedural generation: e.g. use loops to generate paths and component placements
 - Reduce hardcoded SVG Path: e.g. import SVG files for 'paths', rather than using embedded SVG path command strings
 - Built-in component library (e.g. resistors, LEDs, connectors) collected from the Boldport PCBmodE projects
@@ -24,11 +24,7 @@ On the TODO list is:
 
 - generating shapes/[shape].json files
 
-MAybe the interation of a library or two for:
-
-- netlists
-- autorouting
-- rules checking
+Perhaps the integration of a library or two for netlists and auto-routing.
 
 Documentation
 =============
@@ -53,7 +49,7 @@ Install
 
 Ensure PCBmodE is installed and running then install pcbmodezero by running:
 
-.. code: shell
+.. code:
 
     pip install pcbmodezero
 
