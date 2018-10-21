@@ -5,13 +5,12 @@ Experimental Python frontend to PCBmodE.
 
 Highlights:
 
-- Concise*: 'flat dot' syntax for configuration (preserving original JSON names)
-- default values: defaulted configuration options (e.g. documentation font defaults)
-- reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
-- programatic configuration: e.g. reuse config generated from functions, use constants etc
-- procedural generation: e.g. use loops to generate paths and component placements
-- less clutter: e.g. import SVG files for 'paths', rather than using embedded SVG path command strings
-- automated:  triggers `pcbmode` command utility to generate output files
+- Familure: Syntax preserves original JSON names (as far as possible)
+- Consise: Flat 'dot' syntax and helper functio to reduce configuration size
+- Reduce duplication: copy components and slightly modifiy (e.g. location) to reuse as new components
+- Programatic configuration: e.g. reuse config generated from functions, use constants etc
+- Procedural generation: e.g. use loops to generate paths and component placements
+- Reduce hardcoded SVG Path: e.g. import SVG files for 'paths', rather than using embedded SVG path command strings
 - Built-in component library (e.g. resistors, LEDs, connectors) collected from the Boldport PCBmodE projects
 
 
@@ -30,7 +29,19 @@ On the TODO list is the support :
 Documentation
 =============
 
-It's only the example code at the moment...
+It's only the examples at the moment...
+
+.. code:: python
+
+    from pcbmodezero import PCB
+
+    # Hello world example, place an LED (from the built-in part library)
+    # in the middle of a 30mm x 30mm PCB
+
+    pcb = PCB(board_name ="hello_pcb", width=30, height=30)
+    pcb.add_component('led-1206', 'LED1', [0,  0])
+    pcb.save()
+
 
 
 Install
