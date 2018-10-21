@@ -4,9 +4,9 @@ pcb = PCB(board_name ="binco_minified", boards_dir='../sandpit/boards')
 
 # Import from built-in Component Library
 
-pcb.add_library_component('via')
-pcb.add_library_component('led-1206')
-pcb.add_library_component('555-SOIC8')
+pcb.use_library_component('via')
+pcb.use_library_component('led-1206')
+pcb.use_library_component('555-SOIC8')
 
 # Create Component instances, directly in JSON-like tree
 

@@ -14,7 +14,7 @@ from pcbmode.utils.svg import absolute_to_relative_path
 
 class PCB:
 
-    def __init__(self, boards_dir, board_name, rev="first"):
+    def __init__(self, boards_dir, board_name, rev="first", width=None, height=None):
         self.boards_root_dir = join(boards_dir, '..')
         self.board_name = board_name
         self.board_root_filepath = "{}/boards/{}".format(self.boards_root_dir, self.board_name)
@@ -22,7 +22,6 @@ class PCB:
         self.board_shape_dirpath = "{}/boards/{}/shapes".format(self.boards_root_dir, self.board_name)
         self.board_components_dirpath = "{}/boards/{}/components".format(self.boards_root_dir, self.board_name)
         self.component_library = {}
-
 
         self.components= self.create_config_item()
         self.config = self.create_config_item()
@@ -73,7 +72,6 @@ class PCB:
         self.layer_control.soldermask = dict(hide=False, lock=False, place=True)
         self.layer_control.solderpaste = dict(hide=True, lock=True, place=False)
 
-
         self.gerber.decimals = 6
         self.gerber.digits = 6
         self.gerber.min_segment_length = 0.05
@@ -118,6 +116,19 @@ class PCB:
         self.defaults.documentation.value = "Warning: No Text Set"
 
 
+        # Default based on PCB constructor parameters
+
+        if width and height:
+            self.board_width = width
+            self.board_height = width
+
+            outline = PCB.create_square_shape(width, height)
+
+            self.add_documentation('manufacturing', [0, -height / 2], "Manufacturing:...")
+            self.add_documentation('board_details', [0, -height], "Board details: ...")
+            self.add_documentation('pcbmode', [0, -width], "Designed with PCBmodE:...")
+            self.drill_index.location = [0, -height]
+            self.add_outline_path(outline, width=width + 10, height=height + 10)
 
 
         self.preinit_pcbmode()
@@ -155,7 +166,20 @@ class PCB:
     #         sys.stdout = oldstdout
     #         sys.stderr = oldstderr
 
-    def json2py(self, filepath):
+    # JSON Tree functions
+
+    @classmethod
+    def underscore2minus(cls, name):
+        if name == '__class__':
+            raise ValueError
+        return name.replace('_', '-')
+
+    @classmethod
+    def clone(cls, src):
+        return jsontree.clone(src)
+
+    @classmethod
+    def json2py(cls, filepath):
         with open(filepath, 'r') as file:
             txt = file.read()
             decoder = jsontree.JSONTreeDecoder()
@@ -164,94 +188,34 @@ class PCB:
             #print(jsontree.dumps(decoded, indent=4))
             return decoded
 
-    @classmethod
-    def underscore2minus(cls, name):
-        if name == '__class__':
-            raise ValueError
-        return name.replace('_', '-')
 
-    def write_json(self, json_obj, filepath):
+    @classmethod
+    def write_json(cls, json_obj, filepath):
         json_txt = jsontree.dumps(json_obj, indent=4)
         #print (all_json)
 
         with open(filepath, 'w') as file:
             file.write(json_txt)
 
-    def dumpJSON(self, json_obj):
+    @classmethod
+    def dumpJSON(cls, json_obj):
         print(jsontree.dumps(json_obj, indent=4))
 
-    @classmethod
-    def clone(cls, src):
-        return jsontree.clone(src)
+    # Library Component Functions
 
-    def save(self):
-        all = self.create_config_item()
-        all.components = self.clone(self.components)
-        all.config = self.clone(self.config)
-        all.distances = self.clone(self.distances)
-        all.documentation = self.clone(self.documentation)
-        all.drill_index = self.clone(self.drill_index)
-        all.drills = self.clone(self.drills)
-        all.files = self.clone(self.files)
-        all.gerber = self.clone(self.gerber)
-        all.layer_control = self.clone(self.layer_control)
-        all.outline = self.clone(self.outline)
-        all.shapes = self.clone(self.shapes)
-        all.soldermask = self.clone(self.soldermask)
-        all.solderpaste = self.clone(self.solderpaste)
-        all.stackup = self.clone(self.stackup)
-        all.vias = self.clone(self.vias)
-
-        self.write_json(all, self.board_json_filepath)
-
-        self.saveComponents()
-        self.save_routing()
-        chdir(self.boards_root_dir)
-        try:
-            oldargv = sys.argv
-            sys.argv = sys.argv[0::]
-            sys.argv.extend(['-b', self.board_name, '-m'])
-            #print(sys.argv)
-            pcbmode.main()
-        finally:
-            sys.argv = oldargv
-
-
-    @classmethod
-    def read_svg(cls, filepath):
-        paths, attributes = svg2paths(filepath)
-
-        for path in paths:
-            return absolute_to_relative_path(path.d())
-
-
-    def parse_shape_svg(self, svg_filename):
-        return self.read_svg(join(self.board_shape_dirpath, svg_filename))
-
-
-    def parse_component_svg(self, svg_filename):
-        return self.read_svg(join(self.board_components_dirpath, svg_filename))
-
-    def addComponent(self, component, component_name):
+    def add_library_component(self, component, component_name):
         if component_name in self.component_library:
             raise ValueError("%s already exists.".format(component_name))
         self.component_library[component_name] = component
 
-
-    def add_library_component(self, component_name):
-        self.addComponent(find_library_component(component_name), component_name)
-
-
-    def save_component(self, component, component_name):
-        return self.write_json(component, join(self.board_components_dirpath, component_name + '.json'))
-
-    def saveComponents(self):
-        for name, component in self.component_library.items():
-            self.save_component(component, name)
+    def use_library_component(self, component_name):
+        self.add_library_component(find_library_component(component_name), component_name)
 
 
     def save_routing(self):
         return self.write_json(self.routing, join(self.board_root_filepath, self.board_name + '_routing.json'))
+
+    # Board Component Functions
 
     @classmethod
     def create_component(cls, footprint, location, layer="bottom", rotate=0, show=True, silkscreen_refdef_show=True):
@@ -264,20 +228,46 @@ class PCB:
         c.silkscreen.refdef.show = silkscreen_refdef_show
         return c
 
+    def parse_component_svg(self, svg_filename):
+        return self.read_svg(join(self.board_components_dirpath, svg_filename))
+
     def add_component(self, library_compnent_name, board_component_name, location, **kwargs):
         self.components[board_component_name]=  self.create_component(library_compnent_name, location, **kwargs)
 
+    def save_component(self, component, component_name):
+        return self.write_json(component, join(self.board_components_dirpath, component_name + '.json'))
 
-    def create_via(self, location, layer='top', footprint='via'):
-        via = self.create_config_item()
-        via.footprint = footprint
-        via.layer = layer
-        via.location = location
-        via.rotate = 0
-        via.show = True
-        via.assembly.refdef.show = False
-        via.silkscreen.refdef.show = False
-        return via
+    def save_components(self):
+        for name, component in self.component_library.items():
+            self.save_component(component, name)
+
+    # Documentation Functions
+
+    def add_documentation(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
+        self.documentation[section] = self.clone(self.defaults.documentation)
+        self.documentation[section].location = location
+        self.documentation[section].value =text
+        self.documentation[section].font_size = font_size
+        self.documentation[section].line_height = line_height
+
+    def add_outline(self, shape_name, width, height, radii, type="path"):
+        self.outline.shape.height = height
+        self.outline.shape.width = width
+        self.outline.shape.radii = radii
+        self.outline.shape.type = type
+        self.outline.shape.value=self.parse_shape_svg(shape_name)
+
+    def add_outline_path(self, paths, width, height, radii=dict(bl=3, br=3, tl=3, tr=3), type="path"):
+
+        path = Path(*paths)
+
+        self.outline.shape.height = height
+        self.outline.shape.width = width
+        self.outline.shape.radii = radii
+        self.outline.shape.type = type
+        self.outline.shape.value= absolute_to_relative_path(path.d())
+
+    # Routing Functions
 
     def _add_route_to_layer(self, route, layer='bottom'):
         style = route['style'] if 'style' in route else ''
@@ -296,36 +286,21 @@ class PCB:
             "value": absolute_to_relative_path(path.d())
         }, layer=layer)
 
+    def create_via(self, location, layer='top', footprint='via'):
+        via = self.create_config_item()
+        via.footprint = footprint
+        via.layer = layer
+        via.location = location
+        via.rotate = 0
+        via.show = True
+        via.assembly.refdef.show = False
+        via.silkscreen.refdef.show = False
+        return via
+
     def add_via(self, location, layer='top', footprint='via'):
         via = self.create_via(location, layer, footprint)
         key = utils.digest("%s%s" % (via.location[0], via.location[1]))
         self.routing.vias[key] = via
-
-
-    def add_documentation(self, section, location, text, font_size="1.5mm", line_height="1.5mm"):
-        self.documentation[section] = self.clone(self.defaults.documentation)
-        self.documentation[section].location = location
-        self.documentation[section].value =text
-        self.documentation[section].font_size = font_size
-        self.documentation[section].line_height = line_height
-
-
-    def add_outline(self, shape_name, width, height, radii, type="path"):
-        self.outline.shape.height = height
-        self.outline.shape.width = width
-        self.outline.shape.radii = radii
-        self.outline.shape.type = type
-        self.outline.shape.value=self.parse_shape_svg(shape_name)
-
-    def add_outline_path(self, paths, width, height, radii=dict(bl=3, br=3, tl=3, tr=3), type="path"):
-
-        path = Path(*paths)
-
-        self.outline.shape.height = height
-        self.outline.shape.width = width
-        self.outline.shape.radii = radii
-        self.outline.shape.type = type
-        self.outline.shape.value= absolute_to_relative_path(path.d())
 
     def board_component_pin_location(self, component_name, pin_name):
         board_component = self.components[component_name]
@@ -347,6 +322,17 @@ class PCB:
 
         self.add_route([Line(complex(start_pin[0], start_pin[1]), complex(end_pin[0], end_pin[1]))], **kwargs)
 
+    # SVG Functions
+
+    @classmethod
+    def read_svg(cls, filepath):
+        paths, attributes = svg2paths(filepath)
+
+        for path in paths:
+            return absolute_to_relative_path(path.d())
+
+    def parse_shape_svg(self, svg_filename):
+        return self.read_svg(join(self.board_shape_dirpath, svg_filename))
 
     @classmethod
     def create_square_shape(cls, w, h):
@@ -357,5 +343,37 @@ class PCB:
             Line(complex( w, 0), complex( 0, 0)),
         ]
 
+    def save(self):
+        all = self.create_config_item()
+        all.components = self.clone(self.components)
+        all.config = self.clone(self.config)
+        all.distances = self.clone(self.distances)
+        all.documentation = self.clone(self.documentation)
+        all.drill_index = self.clone(self.drill_index)
+        all.drills = self.clone(self.drills)
+        all.files = self.clone(self.files)
+        all.gerber = self.clone(self.gerber)
+        all.layer_control = self.clone(self.layer_control)
+        all.outline = self.clone(self.outline)
+        all.shapes = self.clone(self.shapes)
+        all.soldermask = self.clone(self.soldermask)
+        all.solderpaste = self.clone(self.solderpaste)
+        all.stackup = self.clone(self.stackup)
+        all.vias = self.clone(self.vias)
 
+        self.write_json(all, self.board_json_filepath)
+
+        self.save_components()
+        self.save_routing()
+        chdir(self.boards_root_dir)
+        try:
+            oldargv = sys.argv
+            sys.argv = sys.argv[0::]
+            sys.argv.extend(['-b', self.board_name, '-m'])
+            #print(sys.argv)
+            pcbmode.main()
+        finally:
+            sys.argv = oldargv
+
+# Cyclic import dependencies go here...
 from pcbmodezero.components import find_library_component

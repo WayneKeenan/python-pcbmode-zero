@@ -8,8 +8,8 @@ pcb = PCB(boards_dir='../sandpit/boards', board_name=BOARD_NAME)
 
 # Component Library
 
-pcb.add_library_component('via')
-pcb.add_library_component('led-1206')
+pcb.use_library_component('via')
+pcb.use_library_component('led-1206')
 
 # Board Component instances
 

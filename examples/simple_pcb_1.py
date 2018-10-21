@@ -10,7 +10,7 @@ pcb.add_documentation('board_details', [0, -BOARD_HEIGHT ], "Board details: ..."
 pcb.add_documentation('pcbmode', [0, -BOARD_WIDTH], "Designed with PCBmodE:...", font_size ="1.2", line_height ="1.2")
 pcb.drill_index.location = [0, -BOARD_HEIGHT]
 
-pcb.add_library_component('led-1206')
+pcb.use_library_component('led-1206')
 
 pcb.add_component('led-1206', 'LED1', [0,  0])
 pcb.add_component('led-1206', 'LED2', [5, 10])

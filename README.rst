@@ -23,7 +23,8 @@ Experimental... the current examples_ should hopefully give a flavour of what it
 
 On the TODO list is the support :
 
-- autorouting
+- netlists/autorouting  (https://pypi.org/project/skidl/)
+- rules checking
 - generating shapes/[shape].json files
 
 Documentation
